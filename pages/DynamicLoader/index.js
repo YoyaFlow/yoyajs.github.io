@@ -2,7 +2,7 @@
  * Yoya.Basic V2 - DynamicLoader Demo Page
  */
 
-import { vstack, flex, vButton, vDynamicLoader, toast, LoadStatus, div } from '../../../yoya.esm.min.js';
+import { vstack, flex, vButton, vDynamicLoader, toast, LoadStatus, div } from '../../yoya.esm.min.js';
 import { AppShell } from '../../framework/AppShell.js';
 import { CodeDemo } from '../../components/CodeDemo.js';
 import { DocSection } from '../../components/DocSection.js';

@@ -3,7 +3,7 @@
  * API 属性表格
  */
 
-import { vCard, vCardHeader, vCardBody, div, span, table, tr, th, td, code } from '../../yoya.esm.min.js';
+import { vCard, vCardHeader, vCardBody, div, span, table, tr, th, td, code } from '../yoya.esm.min.js';
 
 /**
  * API 表格

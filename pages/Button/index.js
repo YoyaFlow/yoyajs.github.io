@@ -2,7 +2,7 @@
  * Yoya.Basic V2 - Button Demo Page
  */
 
-import { flex, vstack, vCard, vCardBody, vButton, vMenu, vMenuItem, toast } from '../../../yoya.esm.min.js';
+import { flex, vstack, vCard, vCardBody, vButton, vMenu, vMenuItem, toast } from '../../yoya.esm.min.js';
 import { AppShell } from '../../framework/AppShell.js';
 import { CodeDemo } from '../../components/CodeDemo.js';
 import { DocSection } from '../../components/DocSection.js';

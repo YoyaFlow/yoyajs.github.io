@@ -10,7 +10,7 @@ import {
   vButton, toast,
   vRouter, vLink, vRouterView, vRouterViews,
   div, span, p, h2, h3, code, pre,
-} from '../../../yoya.esm.min.js';
+} from '../../yoya.esm.min.js';
 import { AppShell } from '../../framework/AppShell.js';
 import { CodeDemo } from '../../components/CodeDemo.js';
 import { DocSection } from '../../components/DocSection.js';

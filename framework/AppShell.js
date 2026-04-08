@@ -3,7 +3,7 @@
  * 应用主布局：顶部导航 + 左侧菜单 + 内容区
  */
 
-import { vBody, vstack, flex, container, div } from '../../yoya.esm.min.js';
+import { vBody, vstack, flex, container, div } from '../yoya.esm.min.js';
 import { TopNavbar } from './TopNavbar.js';
 import { Sidebar } from './Sidebar.js';
 import { pageTOC, updateTOCItems, cleanupTOC } from './TOC.js';

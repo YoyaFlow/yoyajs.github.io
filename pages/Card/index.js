@@ -2,8 +2,8 @@
  * Yoya.Basic V2 - Card Demo Page
  */
 
-import { flex, vstack, grid, vButton, toast } from '../../../yoya.esm.min.js';
-import { vCard, vCardHeader, vCardBody, vCardFooter } from '../../../yoya.esm.min.js';
+import { flex, vstack, grid, vButton, toast } from '../../yoya.esm.min.js';
+import { vCard, vCardHeader, vCardBody, vCardFooter } from '../../yoya.esm.min.js';
 import { AppShell } from '../../framework/AppShell.js';
 import { CodeDemo } from '../../components/CodeDemo.js';
 import { DocSection } from '../../components/DocSection.js';

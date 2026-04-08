@@ -3,8 +3,8 @@
  * 文档章节容器
  */
 
-import { vstack, flex } from '../../yoya.esm.min.js';
-import { vMenuItem } from '../../yoya.esm.min.js';
+import { vstack, flex } from '../yoya.esm.min.js';
+import { vMenuItem } from '../yoya.esm.min.js';
 
 /**
  * 文档章节

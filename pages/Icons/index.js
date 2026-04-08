@@ -31,7 +31,7 @@ import {
   ShoppingCartIcon, CreditCardIcon, DollarSignIcon, TrendingUpIcon, TrendingDownIcon,
   ActivityIcon, ZapIcon, HelpCircleIcon, MaximizeIcon, MinimizeIcon, RefreshCwIcon,
   MoreHorizontalIcon, MoreVerticalIcon, GridIcon, ListIcon,
-} from '../../../yoya.esm.min.js';
+} from '../../yoya.esm.min.js';
 
 import { AppShell } from '../../framework/AppShell.js';
 import { DocSection } from '../../components/DocSection.js';

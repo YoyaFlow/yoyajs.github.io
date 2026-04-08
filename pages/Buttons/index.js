@@ -3,7 +3,7 @@
  * VButtons 按钮组演示页面
  */
 
-import { flex, vstack, hstack, vCard, vCardBody, vButton, vButtons, toast, div, span } from '../../../yoya.esm.min.js';
+import { flex, vstack, hstack, vCard, vCardBody, vButton, vButtons, toast, div, span } from '../../yoya.esm.min.js';
 import { AppShell } from '../../framework/AppShell.js';
 import { CodeDemo } from '../../components/CodeDemo.js';
 import { DocSection } from '../../components/DocSection.js';

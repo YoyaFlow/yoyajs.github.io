@@ -2,8 +2,8 @@
  * Yoya.Basic V2 - Detail Demo Page
  */
 
-import { vstack } from '../../../yoya.esm.min.js';
-import { vDetail, vDetailItem } from '../../../yoya.esm.min.js';
+import { vstack } from '../../yoya.esm.min.js';
+import { vDetail, vDetailItem } from '../../yoya.esm.min.js';
 import { AppShell } from '../../framework/AppShell.js';
 import { CodeDemo } from '../../components/CodeDemo.js';
 import { DocSection } from '../../components/DocSection.js';

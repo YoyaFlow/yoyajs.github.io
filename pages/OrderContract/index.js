@@ -5,7 +5,7 @@
 
 import {
   div, span, vDetail, vField, vInput, vSelect, vButton, toast
-} from '../../../yoya.esm.min.js';
+} from '../../yoya.esm.min.js';
 
 // 当前语言
 let currentLang = 'zh-CN';

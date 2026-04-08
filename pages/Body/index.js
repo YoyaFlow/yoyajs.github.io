@@ -3,8 +3,8 @@
  * 页面背景容器演示
  */
 
-import { vstack, div, h1, h2, p } from '../../../yoya.esm.min.js';
-import { vBody, vCard, vCardHeader, vCardBody } from '../../../yoya.esm.min.js';
+import { vstack, div, h1, h2, p } from '../../yoya.esm.min.js';
+import { vBody, vCard, vCardHeader, vCardBody } from '../../yoya.esm.min.js';
 import { AppShell } from '../../framework/AppShell.js';
 import { CodeDemo } from '../../components/CodeDemo.js';
 import { DocSection } from '../../components/DocSection.js';

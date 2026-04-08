@@ -19,7 +19,7 @@ import {
   vTreeSelect,
   span,
   div,
-} from '../../../yoya.esm.min.js';
+} from '../../yoya.esm.min.js';
 import { AppShell } from '../../framework/AppShell.js';
 import { CodeDemo } from '../../components/CodeDemo.js';
 import { DocSection } from '../../components/DocSection.js';

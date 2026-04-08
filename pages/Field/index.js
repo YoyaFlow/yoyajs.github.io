@@ -3,8 +3,8 @@
  * vField 可编辑字段组件演示，配合 vDetail 展示
  */
 
-import { vstack, div } from '../../../yoya.esm.min.js';
-import { vField, vDetail, toast } from '../../../yoya.esm.min.js';
+import { vstack, div } from '../../yoya.esm.min.js';
+import { vField, vDetail, toast } from '../../yoya.esm.min.js';
 import { AppShell } from '../../framework/AppShell.js';
 import { CodeDemo } from '../../components/CodeDemo.js';
 import { DocSection } from '../../components/DocSection.js';

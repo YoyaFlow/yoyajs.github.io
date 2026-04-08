@@ -15,7 +15,7 @@ import {
   toast,
   div,
   span,
-} from '../../../yoya.esm.min.js';
+} from '../../yoya.esm.min.js';
 import {
   vNumberScroll,
   vTrend,
@@ -25,7 +25,7 @@ import {
   vTimeSeries,
   vRankList,
   vDashboardGrid,
-} from '../../../yoya.esm.min.js';
+} from '../../yoya.esm.min.js';
 import { AppShell } from '../../framework/AppShell.js';
 import { CodeDemo } from '../../components/CodeDemo.js';
 import { DocSection } from '../../components/DocSection.js';

@@ -8,7 +8,7 @@ import {
   vCard, vCardHeader, vCardBody,
   vButton, toast, setThemeMode, getThemeMode, switchTheme,
   div, span, h3, vDropdownMenu, vMenu, vCode, vDetail
-} from '../../../yoya.esm.min.js';
+} from '../../yoya.esm.min.js';
 import { AppShell } from '../../framework/AppShell.js';
 import { DocSection } from '../../components/DocSection.js';
 import { PageHeader } from '../../components/PageHeader.js';

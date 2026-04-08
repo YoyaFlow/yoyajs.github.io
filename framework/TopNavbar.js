@@ -3,7 +3,7 @@
  * 顶部导航栏 - 使用 VTopNavbar
  */
 
-import { vTopNavbar, toast, setThemeMode, getThemeMode } from '../../yoya.esm.min.js';
+import { vTopNavbar, toast, setThemeMode, getThemeMode } from '../yoya.esm.min.js';
 
 // 主题图标映射
 const icons = { auto: '🔄', light: '☀️', dark: '🌙' };

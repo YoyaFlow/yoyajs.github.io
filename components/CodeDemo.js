@@ -3,7 +3,7 @@
  * 代码演示块（演示区域 + 代码块）
  */
 
-import { vCard, vCardHeader, vCardBody, vstack, div, vCode } from '../../yoya.esm.min.js';
+import { vCard, vCardHeader, vCardBody, vstack, div, vCode } from '../yoya.esm.min.js';
 
 /**
  * 代码演示块

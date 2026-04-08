@@ -2,8 +2,8 @@
  * Yoya.Basic V2 - Menu Demo Page
  */
 
-import { flex, vstack, hstack } from '../../../yoya.esm.min.js';
-import { vMenu, vMenuItem, vMenuDivider, vMenuGroup, vSubMenu, vDropdownMenu, vButton, toast, vSidebar } from '../../../yoya.esm.min.js';
+import { flex, vstack, hstack } from '../../yoya.esm.min.js';
+import { vMenu, vMenuItem, vMenuDivider, vMenuGroup, vSubMenu, vDropdownMenu, vButton, toast, vSidebar } from '../../yoya.esm.min.js';
 import { AppShell } from '../../framework/AppShell.js';
 import { CodeDemo } from '../../components/CodeDemo.js';
 import { DocSection } from '../../components/DocSection.js';

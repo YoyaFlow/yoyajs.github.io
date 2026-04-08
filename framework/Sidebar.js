@@ -3,7 +3,7 @@
  * 左侧菜单栏，使用统一菜单配置和 vSidebar 组件
  */
 
-import { vSidebar, vMenuItem, toast } from '../../yoya.esm.min.js';
+import { vSidebar, vMenuItem, toast } from '../yoya.esm.min.js';
 import { menuConfig } from '../config/menuConfig.js';
 import { demoRoutes } from '../config/routes.v2.js';
 

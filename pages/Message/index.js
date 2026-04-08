@@ -2,8 +2,8 @@
  * Yoya.Basic V2 - Message Demo Page
  */
 
-import { flex, vstack, vButton } from '../../../yoya.esm.min.js';
-import { toast } from '../../../yoya.esm.min.js';
+import { flex, vstack, vButton } from '../../yoya.esm.min.js';
+import { toast } from '../../yoya.esm.min.js';
 import { AppShell } from '../../framework/AppShell.js';
 import { CodeDemo } from '../../components/CodeDemo.js';
 import { DocSection } from '../../components/DocSection.js';

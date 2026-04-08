@@ -2,8 +2,8 @@
  * Yoya.Basic V2 - VTree Demo Page
  */
 
-import { vTree, vstack, hstack, flex, div, span, button, vCode } from '../../../yoya.esm.min.js';
-import { toast } from '../../../yoya.esm.min.js';
+import { vTree, vstack, hstack, flex, div, span, button, vCode } from '../../yoya.esm.min.js';
+import { toast } from '../../yoya.esm.min.js';
 import { AppShell } from '../../framework/AppShell.js';
 import { CodeDemo } from '../../components/CodeDemo.js';
 import { DocSection } from '../../components/DocSection.js';

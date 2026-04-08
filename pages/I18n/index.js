@@ -6,7 +6,7 @@
 import {
   div, span, vDetail, vField, vInput, vButton, toast,
   initI18n, setLanguage, getLanguage
-} from '../../../yoya.esm.min.js';
+} from '../../yoya.esm.min.js';
 import { AppShell } from '../../framework/AppShell.js';
 import { CodeDemo } from '../../components/CodeDemo.js';
 import { DocSection } from '../../components/DocSection.js';
