@@ -1,0 +1,4198 @@
+/**
+ * Yoya.Theme - Base CSS Variables
+ * 基础主题变量定义（默认浅色主题）
+ */
+
+/* 导入组件样式 - 由 Rollup 打包时处理 */
+/* @import url('./components/index.css'); */
+
+:root {
+  /* ============================================
+     主色调 - 蓝色
+     ============================================ */
+  --yoya-primary: #1E40AF;
+  --yoya-primary-light: #3B82F6;
+  --yoya-primary-dark: #1E3A8A;
+  --yoya-primary-alpha: rgba(30, 64, 175, 0.08);
+  --yoya-primary-hover: rgba(30, 64, 175, 0.12);
+
+  /* ============================================
+     状态色
+     ============================================ */
+  --yoya-success: #28a745;
+  --yoya-success-bg: rgba(40, 167, 69, 0.08);
+  --yoya-success-hover: rgba(40, 167, 69, 0.15);
+
+  --yoya-warning: #ffc107;
+  --yoya-warning-bg: rgba(255, 193, 7, 0.08);
+  --yoya-warning-hover: rgba(255, 193, 7, 0.15);
+
+  --yoya-error: #dc3545;
+  --yoya-error-bg: rgba(220, 53, 69, 0.08);
+  --yoya-error-hover: rgba(220, 53, 69, 0.15);
+
+  --yoya-info: #17a2b8;
+  --yoya-info-bg: rgba(23, 162, 184, 0.08);
+  --yoya-info-hover: rgba(23, 162, 184, 0.15);
+
+  /* ============================================
+     背景色
+     ============================================ */
+  --yoya-bg: #ffffff;
+  --yoya-bg-secondary: #f7f8fa;
+  --yoya-bg-tertiary: #f0f1f3;
+  --yoya-bg-hover: #e8eaed;
+  --yoya-bg-elevated: #ffffff;
+
+  /* ============================================
+     文本色
+     ============================================ */
+  --yoya-text-primary: #1a1c1f;
+  --yoya-text-secondary: #4a4d55;
+  --yoya-text-tertiary: #8b8d93;
+  --yoya-text-disabled: #b8bac0;
+  --yoya-text-inverse: #ffffff;
+
+  /* ============================================
+     边框色
+     ============================================ */
+  --yoya-border: #e0e0e0;
+  --yoya-border-light: #e5e5e7;
+  --yoya-border-focus: #1e40af;
+  --yoya-border-hover: #a8a8ac;
+  --yoya-border-strong: #c2c2c5;
+
+  /* ============================================
+     阴影
+     ============================================ */
+  --yoya-shadow: 0 4px 12px rgba(30, 32, 35, 0.08);
+  --yoya-shadow-hover: 0 6px 16px rgba(30, 32, 35, 0.15);
+  --yoya-shadow-dropdown: 0 4px 12px rgba(30, 32, 35, 0.2);
+  --yoya-shadow-elevated: 0 8px 24px rgba(30, 32, 35, 0.12);
+
+  /* ============================================
+     尺寸 - 间距
+     ============================================ */
+  --yoya-padding-xs: 4px;
+  --yoya-padding-sm: 6px;
+  --yoya-padding-md: 8px;
+  --yoya-padding-lg: 10px;
+  --yoya-padding-xl: 16px;
+
+  --yoya-margin-xs: 4px;
+  --yoya-margin-sm: 6px;
+  --yoya-margin-md: 8px;
+  --yoya-margin-lg: 10px;
+  --yoya-margin-xl: 16px;
+
+  --yoya-gap-xs: 4px;
+  --yoya-gap-sm: 6px;
+  --yoya-gap-md: 8px;
+  --yoya-gap-lg: 10px;
+  --yoya-gap-xl: 16px;
+
+  /* ============================================
+     尺寸 - 圆角
+     ============================================ */
+  --yoya-radius-sm: 4px;
+  --yoya-radius-md: 6px;
+  --yoya-radius-lg: 8px;
+  --yoya-radius-xl: 12px;
+
+  /* ============================================
+     尺寸 - 字体
+     ============================================ */
+  --yoya-font-size-xs: 12px;
+  --yoya-font-size-sm: 13px;
+  --yoya-font-size-md: 14px;
+  --yoya-font-size-lg: 16px;
+  --yoya-font-size-xl: 18px;
+
+  /* ============================================
+     过渡
+     ============================================ */
+  --yoya-transition-fast: 0.15s ease;
+  --yoya-transition-normal: 0.2s ease;
+  --yoya-transition-slow: 0.3s ease;
+
+   /* ============================================
+      其他
+      ============================================ */
+  --yoya-overlay: rgba(30, 32, 35, 0.5);
+  --yoya-scrim: rgba(0, 0, 0, 0.32);
+  --yoya-backdrop: rgba(255, 255, 255, 0.8);
+  --yoya-selection: rgba(30, 64, 175, 0.15);
+  --yoya-selection-inactive: rgba(30, 64, 175, 0.08);
+  --yoya-bg-selected: var(--yoya-primary-alpha);
+
+  /* ============================================
+     Modal 弹出框
+     ============================================ */
+  --yoya-modal-mask-bg: rgba(0, 0, 0, 0.45);
+  --yoya-modal-mask-backdrop-filter: blur(4px);
+  --yoya-modal-bg: #ffffff;
+  --yoya-modal-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  --yoya-modal-radius: 8px;
+  --yoya-modal-header-border: 1px solid #e0e0e0;
+  --yoya-modal-header-color: #333;
+  --yoya-modal-body-color: #333;
+  --yoya-modal-footer-border: 1px solid #e0e0e0;
+  --yoya-modal-close-color: #999;
+  --yoya-modal-close-hover-color: #333;
+  --yoya-modal-close-hover-bg: rgba(0, 0, 0, 0.05);
+
+  /* ============================================
+     Message 组件
+     ============================================ */
+  --yoya-message-z-index: 9999;
+  --yoya-message-gap: 10px;
+  --yoya-message-container-padding: 16px;
+  --yoya-message-max-width: 420px;
+  --yoya-message-icon-size: 18px;
+  --yoya-message-icon-margin: 10px;
+  --yoya-message-font-size: 14px;
+  --yoya-message-line-height: 1.5;
+  --yoya-message-close-size: 20px;
+  --yoya-message-close-padding: 0 4px;
+  --yoya-message-close-opacity: 0.7;
+  --yoya-message-close-hover-opacity: 1;
+  --yoya-message-text-color: var(--yoya-text-primary);
+  --yoya-message-success-bg: var(--yoya-success-bg);
+  --yoya-message-success-color: var(--yoya-success);
+  --yoya-message-success-border: 1px solid var(--yoya-success);
+  --yoya-message-error-bg: var(--yoya-error-bg);
+  --yoya-message-error-color: var(--yoya-error);
+  --yoya-message-error-border: 1px solid var(--yoya-error);
+  --yoya-message-warning-bg: var(--yoya-warning-bg);
+  --yoya-message-warning-color: var(--yoya-warning);
+  --yoya-message-warning-border: 1px solid var(--yoya-warning);
+  --yoya-message-info-bg: var(--yoya-info-bg);
+  --yoya-message-info-color: var(--yoya-info);
+  --yoya-message-info-border: 1px solid var(--yoya-info);
+}
+
+/* ============================================
+   深色模式变量
+   ============================================ */
+
+[data-theme="islands-dark"],
+[data-theme="dark"] {
+  /* 主色调 */
+  --yoya-primary: #5a8bf7;
+  --yoya-primary-light: #7ba3f8;
+  --yoya-primary-dark: #3a6bd7;
+  --yoya-primary-alpha: rgba(90, 139, 247, 0.12);
+  --yoya-primary-hover: rgba(90, 139, 247, 0.2);
+
+  /* 状态色 */
+  --yoya-success: #4ade80;
+  --yoya-success-bg: rgba(74, 222, 128, 0.12);
+  --yoya-success-hover: rgba(74, 222, 128, 0.2);
+
+  --yoya-warning: #fbbf24;
+  --yoya-warning-bg: rgba(251, 191, 36, 0.12);
+  --yoya-warning-hover: rgba(251, 191, 36, 0.2);
+
+  --yoya-error: #f87171;
+  --yoya-error-bg: rgba(248, 113, 113, 0.12);
+  --yoya-error-hover: rgba(248, 113, 113, 0.2);
+
+  --yoya-info: #38bdf8;
+  --yoya-info-bg: rgba(56, 189, 248, 0.12);
+  --yoya-info-hover: rgba(56, 189, 248, 0.2);
+
+  /* 背景色 */
+  --yoya-bg: #1a1a1a;
+  --yoya-bg-secondary: #2a2a2a;
+  --yoya-bg-tertiary: #333333;
+  --yoya-bg-hover: #3a3a3a;
+  --yoya-bg-elevated: #2d2d2d;
+
+  /* 文本色 */
+  --yoya-text-primary: #e0e0e0;
+  --yoya-text-secondary: #a0a0a0;
+  --yoya-text-tertiary: #707070;
+  --yoya-text-disabled: #505050;
+  --yoya-text-inverse: #ffffff;
+
+  /* 边框色 */
+  --yoya-border: #404040;
+  --yoya-border-light: #353535;
+  --yoya-border-focus: #5a8bf7;
+  --yoya-border-hover: #505050;
+  --yoya-border-strong: #4a4a4a;
+
+  /* 阴影 */
+  --yoya-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  --yoya-shadow-hover: 0 6px 16px rgba(0, 0, 0, 0.4);
+  --yoya-shadow-dropdown: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --yoya-shadow-elevated: 0 8px 24px rgba(0, 0, 0, 0.35);
+
+     /* 其他 */
+    --yoya-overlay: rgba(0, 0, 0, 0.6);
+    --yoya-scrim: rgba(0, 0, 0, 0.5);
+    --yoya-backdrop: rgba(26, 26, 26, 0.8);
+    --yoya-selection: rgba(90, 139, 247, 0.2);
+    --yoya-selection-inactive: rgba(90, 139, 247, 0.1);
+    --yoya-bg-selected: var(--yoya-primary-alpha);
+
+  /* Modal 弹出框 */
+  --yoya-modal-mask-bg: rgba(0, 0, 0, 0.65);
+  --yoya-modal-mask-backdrop-filter: blur(4px);
+  --yoya-modal-bg: #2a2a2a;
+  --yoya-modal-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  --yoya-modal-radius: 8px;
+  --yoya-modal-header-border: 1px solid #404040;
+  --yoya-modal-header-color: #e0e0e0;
+  --yoya-modal-body-color: #e0e0e0;
+  --yoya-modal-footer-border: 1px solid #404040;
+  --yoya-modal-close-color: #a0a0a0;
+  --yoya-modal-close-hover-color: #e0e0e0;
+  --yoya-modal-close-hover-bg: rgba(255, 255, 255, 0.05);
+
+  /* Message 组件 */
+  --yoya-message-z-index: 9999;
+  --yoya-message-gap: 10px;
+  --yoya-message-container-padding: 16px;
+  --yoya-message-max-width: 420px;
+  --yoya-message-icon-size: 18px;
+  --yoya-message-icon-margin: 10px;
+  --yoya-message-font-size: 14px;
+  --yoya-message-line-height: 1.5;
+  --yoya-message-close-size: 20px;
+  --yoya-message-close-padding: 0 4px;
+  --yoya-message-close-opacity: 0.7;
+  --yoya-message-close-hover-opacity: 1;
+  --yoya-message-text-color: var(--yoya-text-primary);
+  --yoya-message-success-bg: var(--yoya-success-bg);
+  --yoya-message-success-color: var(--yoya-success);
+  --yoya-message-success-border: 1px solid var(--yoya-success);
+  --yoya-message-error-bg: var(--yoya-error-bg);
+  --yoya-message-error-color: var(--yoya-error);
+  --yoya-message-error-border: 1px solid var(--yoya-error);
+  --yoya-message-warning-bg: var(--yoya-warning-bg);
+  --yoya-message-warning-color: var(--yoya-warning);
+  --yoya-message-warning-border: 1px solid var(--yoya-warning);
+  --yoya-message-info-bg: var(--yoya-info-bg);
+  --yoya-message-info-color: var(--yoya-info);
+  --yoya-message-info-border: 1px solid var(--yoya-info);
+}
+
+/* ============================================
+   自动模式 - 跟随系统
+   ============================================ */
+
+@media (prefers-color-scheme: dark) {
+  [data-theme="auto"] {
+    /* 主色调 */
+    --yoya-primary: #5a8bf7;
+    --yoya-primary-light: #7ba3f8;
+    --yoya-primary-dark: #3a6bd7;
+    --yoya-primary-alpha: rgba(90, 139, 247, 0.12);
+    --yoya-primary-hover: rgba(90, 139, 247, 0.2);
+
+    /* 状态色 */
+    --yoya-success: #4ade80;
+    --yoya-success-bg: rgba(74, 222, 128, 0.12);
+    --yoya-success-hover: rgba(74, 222, 128, 0.2);
+
+    --yoya-warning: #fbbf24;
+    --yoya-warning-bg: rgba(251, 191, 36, 0.12);
+    --yoya-warning-hover: rgba(251, 191, 36, 0.2);
+
+    --yoya-error: #f87171;
+    --yoya-error-bg: rgba(248, 113, 113, 0.12);
+    --yoya-error-hover: rgba(248, 113, 113, 0.2);
+
+    --yoya-info: #38bdf8;
+    --yoya-info-bg: rgba(56, 189, 248, 0.12);
+    --yoya-info-hover: rgba(56, 189, 248, 0.2);
+
+    /* 背景色 */
+    --yoya-bg: #1a1a1a;
+    --yoya-bg-secondary: #2a2a2a;
+    --yoya-bg-tertiary: #333333;
+    --yoya-bg-hover: #3a3a3a;
+    --yoya-bg-elevated: #2d2d2d;
+
+    /* 文本色 */
+    --yoya-text-primary: #e0e0e0;
+    --yoya-text-secondary: #a0a0a0;
+    --yoya-text-tertiary: #707070;
+    --yoya-text-disabled: #505050;
+    --yoya-text-inverse: #ffffff;
+
+    /* 边框色 */
+    --yoya-border: #404040;
+    --yoya-border-light: #353535;
+    --yoya-border-focus: #5a8bf7;
+    --yoya-border-hover: #505050;
+    --yoya-border-strong: #4a4a4a;
+
+    /* 阴影 */
+    --yoya-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    --yoya-shadow-hover: 0 6px 16px rgba(0, 0, 0, 0.4);
+    --yoya-shadow-dropdown: 0 4px 12px rgba(0, 0, 0, 0.4);
+    --yoya-shadow-elevated: 0 8px 24px rgba(0, 0, 0, 0.35);
+
+    /* 其他 */
+    --yoya-overlay: rgba(0, 0, 0, 0.6);
+    --yoya-scrim: rgba(0, 0, 0, 0.5);
+    --yoya-backdrop: rgba(26, 26, 26, 0.8);
+    --yoya-selection: rgba(90, 139, 247, 0.2);
+    --yoya-selection-inactive: rgba(90, 139, 247, 0.1);
+
+    /* Modal 弹出框 */
+    --yoya-modal-mask-bg: rgba(0, 0, 0, 0.65);
+    --yoya-modal-mask-backdrop-filter: blur(4px);
+    --yoya-modal-bg: #2a2a2a;
+    --yoya-modal-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    --yoya-modal-radius: 8px;
+    --yoya-modal-header-border: 1px solid #404040;
+    --yoya-modal-header-color: #e0e0e0;
+    --yoya-modal-body-color: #e0e0e0;
+    --yoya-modal-footer-border: 1px solid #404040;
+    --yoya-modal-close-color: #a0a0a0;
+    --yoya-modal-close-hover-color: #e0e0e0;
+    --yoya-modal-close-hover-bg: rgba(255, 255, 255, 0.05);
+
+    /* Message 组件 */
+    --yoya-message-z-index: 9999;
+    --yoya-message-gap: 10px;
+    --yoya-message-container-padding: 16px;
+    --yoya-message-max-width: 420px;
+    --yoya-message-icon-size: 18px;
+    --yoya-message-icon-margin: 10px;
+    --yoya-message-font-size: 14px;
+    --yoya-message-line-height: 1.5;
+    --yoya-message-close-size: 20px;
+    --yoya-message-close-padding: 0 4px;
+    --yoya-message-close-opacity: 0.7;
+    --yoya-message-close-hover-opacity: 1;
+    --yoya-message-text-color: var(--yoya-text-primary);
+    --yoya-message-success-bg: var(--yoya-success-bg);
+    --yoya-message-success-color: var(--yoya-success);
+    --yoya-message-success-border: 1px solid var(--yoya-success);
+    --yoya-message-error-bg: var(--yoya-error-bg);
+    --yoya-message-error-color: var(--yoya-error);
+    --yoya-message-error-border: 1px solid var(--yoya-error);
+    --yoya-message-warning-bg: var(--yoya-warning-bg);
+    --yoya-message-warning-color: var(--yoya-warning);
+    --yoya-message-warning-border: 1px solid var(--yoya-warning);
+    --yoya-message-info-bg: var(--yoya-info-bg);
+    --yoya-message-info-color: var(--yoya-info);
+    --yoya-message-info-border: 1px solid var(--yoya-info);
+  }
+}
+
+/**
+ * Yoya.Theme - Button Component Styles
+ * 按钮组件样式
+ */
+
+/* ============================================
+   基础按钮样式
+   ============================================ */
+.yoya-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--yoya-gap-sm, 6px);
+  padding: var(--yoya-button-padding, 8px 16px);
+  font-size: var(--yoya-button-font-size, 14px);
+  font-weight: 400;
+  border-radius: var(--yoya-button-radius, 6px);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  outline: none;
+  min-width: var(--yoya-button-min-width, 64px);
+  height: var(--yoya-button-height, 32px);
+}
+
+.yoya-button:hover {
+  transform: scale(1.02);
+}
+
+.yoya-button:active {
+  transform: scale(0.98);
+}
+
+/* ============================================
+   按钮类型 - Default
+   ============================================ */
+.yoya-button--default {
+  background: var(--yoya-bg);
+  color: var(--yoya-text-primary);
+  border-color: var(--yoya-border);
+}
+
+.yoya-button--default:hover {
+  background: var(--yoya-bg-hover);
+}
+
+/* ============================================
+   按钮类型 - Primary
+   ============================================ */
+.yoya-button--primary {
+  background: var(--yoya-primary);
+  color: var(--yoya-text-inverse);
+  border-color: var(--yoya-primary);
+}
+
+.yoya-button--primary:hover {
+  background: var(--yoya-primary-dark);
+}
+
+/* ============================================
+   按钮类型 - Success
+   ============================================ */
+.yoya-button--success {
+  background: var(--yoya-success);
+  color: var(--yoya-text-inverse);
+  border-color: var(--yoya-success);
+}
+
+.yoya-button--success:hover {
+  background: var(--yoya-success-hover);
+}
+
+/* ============================================
+   按钮类型 - Warning
+   ============================================ */
+.yoya-button--warning {
+  background: var(--yoya-warning);
+  color: var(--yoya-text-primary);
+  border-color: var(--yoya-warning);
+}
+
+.yoya-button--warning:hover {
+  background: var(--yoya-warning-hover);
+}
+
+/* ============================================
+   按钮类型 - Danger
+   ============================================ */
+.yoya-button--danger {
+  background: var(--yoya-error);
+  color: var(--yoya-text-inverse);
+  border-color: var(--yoya-error);
+}
+
+.yoya-button--danger:hover {
+  background: var(--yoya-error-hover);
+}
+
+/* ============================================
+   按钮类型 - Info
+   ============================================ */
+.yoya-button--info {
+  background: var(--yoya-info);
+  color: var(--yoya-text-inverse);
+  border-color: var(--yoya-info);
+}
+
+.yoya-button--info:hover {
+  background: var(--yoya-info-hover);
+}
+
+/* ============================================
+   Ghost 按钮样式
+   ============================================ */
+.yoya-button--ghost.yoya-button--primary {
+  background: transparent;
+  color: var(--yoya-primary);
+  border-color: var(--yoya-primary);
+}
+
+.yoya-button--ghost.yoya-button--primary:hover {
+  background: var(--yoya-primary-alpha);
+}
+
+.yoya-button--ghost.yoya-button--success {
+  background: transparent;
+  color: var(--yoya-success);
+  border-color: var(--yoya-success);
+}
+
+.yoya-button--ghost.yoya-button--success:hover {
+  background: var(--yoya-success-bg);
+}
+
+.yoya-button--ghost.yoya-button--warning {
+  background: transparent;
+  color: var(--yoya-warning);
+  border-color: var(--yoya-warning);
+}
+
+.yoya-button--ghost.yoya-button--warning:hover {
+  background: var(--yoya-warning-bg);
+}
+
+.yoya-button--ghost.yoya-button--danger {
+  background: transparent;
+  color: var(--yoya-error);
+  border-color: var(--yoya-error);
+}
+
+.yoya-button--ghost.yoya-button--danger:hover {
+  background: var(--yoya-error-bg);
+}
+
+/* ============================================
+   按钮尺寸
+   ============================================ */
+.yoya-button--small {
+  padding: var(--yoya-button-padding-sm, 4px 10px);
+  font-size: var(--yoya-button-font-size-sm, 12px);
+  height: var(--yoya-button-height-sm, 24px);
+}
+
+.yoya-button--medium {
+  padding: var(--yoya-button-padding, 8px 16px);
+  font-size: var(--yoya-button-font-size, 14px);
+  height: var(--yoya-button-height, 32px);
+}
+
+.yoya-button--large {
+  padding: var(--yoya-button-padding-lg, 10px 20px);
+  font-size: var(--yoya-button-font-size-lg, 16px);
+  height: var(--yoya-button-height-lg, 40px);
+}
+
+/* ============================================
+   按钮状态
+   ============================================ */
+.yoya-button--disabled,
+.yoya-button[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.yoya-button--block {
+  display: flex;
+  width: 100%;
+}
+
+/* ============================================
+   Loading 状态
+   ============================================ */
+.yoya-button--loading {
+  cursor: wait;
+  pointer-events: none;
+}
+
+@keyframes buttonLoadingSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.yoya-button__loading-spinner {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border: 2px solid currentColor;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  animation: buttonLoadingSpin 0.8s linear infinite;
+}
+
+/* ============================================
+   VButtons 按钮组 - 紧凑模式
+   ============================================ */
+.yoya-buttons {
+  display: inline-flex;
+  gap: var(--yoya-gap-sm, 8px);
+}
+
+/* 横向布局（默认） */
+.yoya-buttons--horizontal {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--yoya-gap-sm, 8px);
+}
+
+/* 竖向布局 */
+.yoya-buttons--vertical {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--yoya-gap-sm, 8px);
+}
+
+/* 紧凑模式 */
+.yoya-buttons--compact,
+.yoya-buttons--compact.yoya-buttons--horizontal {
+  gap: var(--yoya-gap-xs, 4px);
+}
+
+.yoya-buttons--compact.yoya-buttons--vertical {
+  gap: var(--yoya-gap-xs, 4px);
+}
+
+/**
+ * Yoya.Theme - Menu Component Styles
+ * 菜单组件样式
+ */
+
+/* ============================================
+   基础菜单样式
+   ============================================ */
+.yoya-menu {
+  display: flex;
+  flex-direction: column;
+  background: var(--yoya-bg-elevated);
+  border-radius: var(--yoya-radius-md, 6px);
+  box-shadow: var(--yoya-shadow-dropdown, 0 4px 12px rgba(30, 32, 35, 0.2));
+  border: 1px solid var(--yoya-border-light);
+  min-width: 160px;
+  padding: var(--yoya-padding-sm, 6px);
+}
+
+.yoya-menu--horizontal {
+  flex-direction: row;
+}
+
+.yoya-menu--compact {
+  padding: var(--yoya-padding-xs, 4px);
+}
+
+.yoya-menu--no-shadow {
+  box-shadow: none;
+}
+
+.yoya-menu--bordered {
+  border: 1px solid var(--yoya-border);
+}
+
+/* ============================================
+   菜单项样式
+   ============================================ */
+.yoya-menu-item {
+  display: flex;
+  align-items: center;
+  gap: var(--yoya-gap-sm, 6px);
+  padding: var(--yoya-padding-md, 8px) var(--yoya-padding-lg, 10px);
+  border-radius: var(--yoya-radius-sm, 4px);
+  cursor: pointer;
+  transition: all var(--yoya-transition-fast, 0.15s ease);
+  color: var(--yoya-text-primary);
+  font-size: var(--yoya-font-size-md, 14px);
+  user-select: none;
+}
+
+.yoya-menu-item:hover {
+  background: var(--yoya-bg-hover);
+}
+
+/* ============================================
+   菜单项状态
+   ============================================ */
+.yoya-menu-item--active {
+  background: var(--yoya-primary-alpha);
+  color: var(--yoya-primary);
+}
+
+.yoya-menu-item--active:hover {
+  background: var(--yoya-primary-hover);
+}
+
+.yoya-menu-item--disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.yoya-menu-item--danger {
+  color: var(--yoya-error);
+}
+
+.yoya-menu-item--danger:hover {
+  background: var(--yoya-error-bg);
+}
+
+.yoya-menu-item--expanded {
+  background: var(--yoya-menu-item-hover-bg, var(--yoya-hover-bg));
+}
+
+.yoya-menu-item--hovering {
+  background: var(--yoya-bg-hover);
+}
+
+/* ============================================
+   菜单项内部元素
+   ============================================ */
+.yoya-menu-item__icon {
+  display: inline-flex;
+  width: 16px;
+  height: 16px;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.yoya-menu-item__text {
+  flex: 1;
+}
+
+.yoya-menu-item__shortcut {
+  font-size: var(--yoya-font-size-xs, 12px);
+  color: var(--yoya-text-tertiary);
+  margin-left: var(--yoya-margin-sm, 6px);
+}
+
+/* ============================================
+   菜单分割线
+   ============================================ */
+.yoya-menu-divider {
+  height: 1px;
+  background: var(--yoya-border-light);
+  margin: var(--yoya-margin-sm, 6px) 0;
+}
+
+/* ============================================
+   菜单组
+   ============================================ */
+.yoya-menu-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.yoya-menu-group__label {
+  padding: var(--yoya-padding-xs, 4px) var(--yoya-padding-md, 8px);
+  font-size: var(--yoya-font-size-xs, 12px);
+  font-weight: 600;
+  color: var(--yoya-text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* ============================================
+   下拉菜单
+   ============================================ */
+.yoya-dropdown-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.yoya-dropdown-menu__trigger {
+  cursor: pointer;
+  user-select: none;
+}
+
+.yoya-dropdown-menu__content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  margin-top: 4px;
+}
+
+.yoya-dropdown-menu__content--right {
+  left: auto;
+  right: 0;
+}
+
+/* ============================================
+   右键菜单
+   ============================================ */
+.yoya-context-menu {
+  position: fixed;
+  z-index: 9999;
+}
+
+/* ============================================
+   水平菜单
+   ============================================ */
+.yoya-menu--horizontal .yoya-menu-item {
+  border-radius: var(--yoya-radius-md, 6px);
+}
+
+.yoya-menu--horizontal .yoya-menu-item:hover {
+  background: var(--yoya-bg-hover);
+}
+
+/* ============================================
+   VSidebar 侧边栏
+   ============================================ */
+.yoya-sidebar {
+  display: flex;
+  flex-direction: column;
+  width: var(--yoya-sidebar-width, 240px);
+  min-width: var(--yoya-sidebar-width, 240px);
+  height: 100%;
+  background: var(--yoya-sidebar-bg, var(--yoya-bg-elevated));
+  border-right: var(--yoya-sidebar-border, 1px solid var(--yoya-border-light));
+  color: var(--yoya-sidebar-content-color, var(--yoya-text-primary));
+  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1), min-width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.yoya-sidebar--collapsed {
+  width: var(--yoya-sidebar-collapsed-width, 64px) !important;
+  min-width: var(--yoya-sidebar-collapsed-width, 64px) !important;
+}
+
+.yoya-sidebar__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--yoya-padding-lg, 16px);
+  border-bottom: 1px solid var(--yoya-border-light);
+  min-height: 60px;
+}
+
+.yoya-sidebar__content {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--yoya-padding-md, 8px);
+}
+
+.yoya-sidebar__footer {
+  border-top: 1px solid var(--yoya-border-light);
+  padding: var(--yoya-padding-md, 8px);
+}
+
+.yoya-sidebar__toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: var(--yoya-padding-sm, 6px);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--yoya-text-secondary);
+  transition: all var(--yoya-transition-fast, 0.15s ease);
+}
+
+.yoya-sidebar__toggle:hover {
+  background: var(--yoya-bg-hover);
+  color: var(--yoya-text-primary);
+}
+
+/* ============================================
+   VTopNavbar 顶部导航栏
+   ============================================ */
+.yoya-navbar {
+  display: block;
+  width: 100%;
+  height: var(--yoya-navbar-height, 60px);
+  background: var(--yoya-navbar-bg, var(--yoya-bg-elevated));
+  border-bottom: var(--yoya-navbar-border, 1px solid var(--yoya-border-light));
+  box-sizing: border-box;
+  z-index: var(--yoya-navbar-z-index, 1000);
+  color: var(--yoya-text-primary);
+}
+
+.yoya-navbar--fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.yoya-navbar--bordered {
+  border-bottom: var(--yoya-navbar-border, 1px solid var(--yoya-border-light));
+}
+
+.yoya-navbar--no-border {
+  border-bottom: none;
+}
+
+.yoya-navbar__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding: 0 var(--yoya-navbar-padding, 16px);
+  box-sizing: border-box;
+}
+
+.yoya-navbar__logo {
+  display: flex;
+  align-items: center;
+  gap: var(--yoya-gap-sm, 8px);
+  font-size: var(--yoya-font-size-lg, 16px);
+  font-weight: 600;
+  color: var(--yoya-text-primary);
+  cursor: pointer;
+  transition: color var(--yoya-transition-fast, 0.15s ease);
+}
+
+.yoya-navbar__logo:hover {
+  color: var(--yoya-primary);
+}
+
+.yoya-navbar__menu {
+  display: flex;
+  align-items: center;
+  gap: var(--yoya-gap-sm, 4px);
+}
+
+.yoya-navbar__item {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--yoya-gap-xs, 4px);
+  padding: var(--yoya-padding-sm, 6px) var(--yoya-padding-md, 8px);
+  border-radius: var(--yoya-radius-md, 6px);
+  font-size: var(--yoya-font-size-md, 14px);
+  color: var(--yoya-text-secondary);
+  cursor: pointer;
+  transition: all var(--yoya-transition-fast, 0.15s ease);
+  background: transparent;
+  border: none;
+}
+
+.yoya-navbar__item:hover {
+  background: var(--yoya-navbar-item-hover-bg, var(--yoya-bg-hover));
+  color: var(--yoya-text-primary);
+}
+
+.yoya-navbar__item--active {
+  background: var(--yoya-navbar-item-active-bg, rgba(37, 99, 235, 0.08));
+  color: var(--yoya-navbar-item-active-color, var(--yoya-primary));
+}
+
+.yoya-navbar__right {
+  display: flex;
+  align-items: center;
+  gap: var(--yoya-gap-sm, 8px);
+}
+
+.yoya-navbar__item--hover {
+  background: var(--yoya-navbar-item-hover-bg, var(--yoya-bg-hover));
+  color: var(--yoya-text-primary);
+}
+
+.yoya-navbar__divider {
+  width: 1px;
+  height: 20px;
+  background: var(--yoya-border);
+  margin: 0 var(--yoya-margin-sm, 8px);
+}
+
+/* ============================================
+   Dark Mode 深色模式
+   ============================================ */
+[data-theme='islands-dark'] .yoya-menu-item__shortcut {
+  background: var(--yoya-bg-secondary, #2a2a2a) !important;
+  color: var(--yoya-text-tertiary, #888) !important;
+}
+
+[data-theme='islands-dark'] .yoya-sidebar {
+  color: var(--yoya-sidebar-content-color, var(--yoya-text-primary, #e0e0e0)) !important;
+}
+
+[data-theme='islands-dark'] .yoya-sidebar__header {
+  color: var(--yoya-sidebar-header-color, var(--yoya-text-primary, #e0e0e0)) !important;
+}
+
+/**
+ * Yoya.Theme - Card Component Styles
+ * 卡片组件样式
+ */
+
+/* ============================================
+   基础卡片样式
+   ============================================ */
+.yoya-card {
+  background: var(--yoya-bg-elevated);
+  border-radius: var(--yoya-radius-lg, 8px);
+  box-shadow: var(--yoya-shadow, 0 4px 12px rgba(30, 32, 35, 0.08));
+  border: 1px solid var(--yoya-border-light);
+  overflow: hidden;
+  transition: box-shadow var(--yoya-transition-normal, 0.2s ease);
+}
+
+.yoya-card:hover {
+  box-shadow: var(--yoya-shadow-hover, 0 6px 16px rgba(30, 32, 35, 0.15));
+}
+
+/* ============================================
+   卡片头部
+   ============================================ */
+.yoya-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--yoya-padding-lg, 10px) var(--yoya-padding-xl, 16px);
+  border-bottom: 1px solid var(--yoya-border-light);
+  background: var(--yoya-bg-secondary);
+}
+
+.yoya-card__title {
+  font-size: var(--yoya-font-size-lg, 16px);
+  font-weight: 600;
+  color: var(--yoya-text-primary);
+  margin: 0;
+}
+
+.yoya-card__subtitle {
+  font-size: var(--yoya-font-size-sm, 13px);
+  color: var(--yoya-text-secondary);
+  margin-top: 2px;
+}
+
+/* ============================================
+   卡片内容区
+   ============================================ */
+.yoya-card__body {
+  padding: var(--yoya-padding-xl, 16px);
+  color: var(--yoya-text-primary);
+}
+
+/* ============================================
+   卡片底部
+   ============================================ */
+.yoya-card__footer {
+  display: flex;
+  align-items: center;
+  gap: var(--yoya-gap-md, 8px);
+  padding: var(--yoya-padding-md, 8px) var(--yoya-padding-xl, 16px);
+  border-top: 1px solid var(--yoya-border-light);
+  background: var(--yoya-bg-secondary);
+}
+
+/* ============================================
+   卡片变体
+   ============================================ */
+.yoya-card--outlined {
+  background: transparent;
+  box-shadow: none;
+  border: 1px solid var(--yoya-border);
+}
+
+.yoya-card--outlined:hover {
+  box-shadow: none;
+}
+
+.yoya-card--elevated {
+  box-shadow: var(--yoya-shadow-elevated, 0 8px 24px rgba(30, 32, 35, 0.12));
+  border: none;
+}
+
+.yoya-card--elevated:hover {
+  box-shadow: 0 12px 32px rgba(30, 32, 35, 0.16);
+}
+
+/* ============================================
+   卡片尺寸
+   ============================================ */
+.yoya-card--compact .yoya-card__body {
+  padding: var(--yoya-padding-md, 8px);
+}
+
+.yoya-card--compact .yoya-card__header {
+  padding: var(--yoya-padding-md, 8px) var(--yoya-padding-lg, 10px);
+}
+
+/* ============================================
+   卡片交互
+   ============================================ */
+.yoya-card--clickable {
+  cursor: pointer;
+}
+
+.yoya-card--clickable:hover {
+  box-shadow: var(--yoya-shadow-hover, 0 6px 16px rgba(30, 32, 35, 0.15));
+}
+
+/* ============================================
+   卡片悬浮效果
+   ============================================ */
+.yoya-card--hoverable {
+  cursor: pointer;
+  transition: box-shadow var(--yoya-transition-normal, 0.2s ease), transform var(--yoya-transition-normal, 0.2s ease);
+}
+
+.yoya-card--hoverable:hover {
+  box-shadow: var(--yoya-shadow-hover, 0 6px 16px rgba(30, 32, 35, 0.15));
+  transform: translateY(-2px);
+}
+
+/* ============================================
+   无阴影卡片
+   ============================================ */
+.yoya-card--no-shadow {
+  box-shadow: none !important;
+}
+
+/* ============================================
+    responsive
+   ============================================ */
+@media (max-width: 768px) {
+  .yoya-card__header,
+  .yoya-card__body,
+  .yoya-card__footer {
+    padding-left: var(--yoya-padding-md, 8px);
+    padding-right: var(--yoya-padding-md, 8px);
+  }
+}
+
+/**
+ * Yoya.Theme - Tabs Component Styles
+ * 标签页组件样式（IDEA 风格：紧凑、无圆角、与内容无缝衔接）
+ */
+
+/* ============================================
+   基础 Tabs 容器
+   ============================================ */
+.yoya-tabs {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  background: var(--yoya-bg);
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/* ============================================
+   标签栏容器
+   ============================================ */
+.yoya-tabs__header {
+  display: flex;
+  align-items: flex-end;
+  gap: 0;
+  border-bottom: 1px solid var(--yoya-border);
+  background: var(--yoya-bg-secondary);
+  overflow-x: auto;
+  overflow-y: hidden;
+  flex-shrink: 0;
+  margin-bottom: 0;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(128, 128, 128, 0.3) transparent;
+}
+
+.yoya-tabs__header::-webkit-scrollbar {
+  height: 3px;
+}
+
+.yoya-tabs__header::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.yoya-tabs__header::-webkit-scrollbar-thumb {
+  background: rgba(128, 128, 128, 0.3);
+  border-radius: 2px;
+}
+
+.yoya-tabs__header::-webkit-scrollbar-thumb:hover {
+  background: rgba(128, 128, 128, 0.5);
+}
+
+/* ============================================
+   单个标签样式
+   ============================================ */
+.yoya-tabs__tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  padding-right: 8px;
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--yoya-text-secondary);
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  transition: all var(--yoya-transition-fast, 0.15s ease);
+  user-select: none;
+  white-space: nowrap;
+  position: relative;
+  min-width: 0;
+  flex-shrink: 0;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  margin-top: 0;
+}
+
+.yoya-tabs__tab:hover {
+  background: var(--yoya-bg-hover);
+}
+
+/* 标签激活状态 */
+.yoya-tabs__tab--active {
+  color: var(--yoya-text-primary);
+  background: var(--yoya-bg);
+  border-bottom-color: var(--yoya-primary);
+  font-weight: 500;
+}
+
+/* ============================================
+   标签图标
+   ============================================ */
+.yoya-tabs__tab-icon {
+  display: inline-flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 1;
+  opacity: 0.7;
+}
+
+/* ============================================
+   标签标题
+   ============================================ */
+.yoya-tabs__tab-title {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  letter-spacing: 0;
+}
+
+/* ============================================
+   关闭按钮
+   ============================================ */
+.yoya-tabs__tab-close {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 3px;
+  font-size: 14px;
+  line-height: 1;
+  color: var(--yoya-text-secondary);
+  cursor: pointer;
+  transition: all 0.1s ease;
+  opacity: 0;
+}
+
+/* 鼠标悬停时显示关闭按钮 */
+.yoya-tabs__tab:hover .yoya-tabs__tab-close {
+  opacity: 0.7;
+}
+
+.yoya-tabs__tab-close:hover {
+  opacity: 1;
+  background: var(--yoya-error-bg);
+  color: var(--yoya-error);
+}
+
+/* 激活标签的关闭按钮始终可见 */
+.yoya-tabs__tab--active .yoya-tabs__tab-close {
+  opacity: 0.7;
+}
+
+/* 标签页不可关闭时隐藏关闭按钮 */
+.yoya-tabs__tab--unclosable .yoya-tabs__tab-close {
+  display: none !important;
+}
+
+/* ============================================
+   内容容器
+   ============================================ */
+.yoya-tabs__content-container {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+}
+
+/* ============================================
+   单个标签内容
+   ============================================ */
+.yoya-tabs__content {
+  display: none;
+  flex: 1;
+  overflow: auto;
+  background: var(--yoya-bg);
+}
+
+.yoya-tabs__content--active {
+  display: block;
+}
+
+/* ============================================
+   closable 状态 - 显示关闭按钮
+   ============================================ */
+.yoya-tabs--closable .yoya-tabs__tab-close {
+  display: none;
+}
+
+.yoya-tabs--closable .yoya-tabs__tab:hover .yoya-tabs__tab-close {
+  display: flex;
+}
+
+/* ============================================
+    compact 紧凑模式
+   ============================================ */
+.yoya-tabs--compact .yoya-tabs__tab {
+  padding: 4px 8px;
+  padding-right: 6px;
+  font-size: 12px;
+}
+
+/* ============================================
+    responsive
+   ============================================ */
+@media (max-width: 768px) {
+  .yoya-tabs__tab {
+    padding: 6px 8px;
+    font-size: 12px;
+  }
+}
+
+/**
+ * Yoya.Theme - Pager Component Styles
+ * 分页导航组件样式
+ */
+
+/* ============================================
+   基础 Pager 容器
+   ============================================ */
+.yoya-pager {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  font-size: 11px;
+  color: var(--yoya-text-primary);
+  user-select: none;
+}
+
+/* 禁用状态 */
+.yoya-pager--disabled {
+  opacity: 0.5;
+  cursor: not-allowed !important;
+}
+
+/* ============================================
+   导航按钮（上一页/下一页）
+   ============================================ */
+.yoya-pager__nav {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 22px;
+  height: 22px;
+  padding: 0 4px;
+  border: 1px solid var(--yoya-border);
+  border-radius: 2px;
+  background: var(--yoya-bg);
+  color: var(--yoya-text-primary);
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.yoya-pager__nav:hover:not(.yoya-pager__nav--disabled) {
+  border-color: var(--yoya-primary);
+  color: var(--yoya-primary);
+}
+
+.yoya-pager__nav--disabled {
+  cursor: not-allowed;
+  opacity: 0.3;
+}
+
+/* ============================================
+   页码按钮
+   ============================================ */
+.yoya-pager__number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 3px;
+  border: 1px solid var(--yoya-border);
+  border-radius: 2px;
+  background: var(--yoya-bg);
+  color: var(--yoya-text-primary);
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 11px;
+  font-weight: 400;
+  user-select: none;
+}
+
+.yoya-pager__number:hover:not(.yoya-pager__number--active) {
+  border-color: var(--yoya-primary);
+  color: var(--yoya-primary);
+}
+
+.yoya-pager__number--active {
+  background: var(--yoya-primary);
+  color: var(--yoya-text-inverse);
+  font-weight: 500;
+}
+
+/* ============================================
+   省略号
+   ============================================ */
+.yoya-pager__more {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 20px;
+  color: var(--yoya-text-tertiary);
+  font-size: 11px;
+}
+
+/* ============================================
+   总记录数文本
+   ============================================ */
+.yoya-pager__total {
+  color: var(--yoya-text-secondary);
+  font-size: 11px;
+}
+
+/* ============================================
+   简洁模式文本
+   ============================================ */
+.yoya-pager__simple {
+  color: var(--yoya-text-primary);
+  font-size: 13px;
+}
+
+/* ============================================
+   快速跳转容器
+   ============================================ */
+.yoya-pager__jumper {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.yoya-pager__jumper-label {
+  color: var(--yoya-text-secondary);
+  font-size: 10px;
+}
+
+.yoya-pager__jumper-input {
+  display: inline-flex;
+  align-items: center;
+  min-width: 28px;
+  height: 20px;
+  padding: 0 4px;
+  border: 1px solid var(--yoya-border);
+  border-radius: 2px;
+  background: var(--yoya-bg);
+}
+
+.yoya-pager__jumper-input input {
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-size: 11px;
+  color: var(--yoya-text-primary);
+  background: transparent;
+  -moz-appearance: textfield;
+  -webkit-appearance: none;
+}
+
+.yoya-pager__jumper-input input::-webkit-inner-spin-button,
+.yoya-pager__jumper-input input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.yoya-pager__jumper-unit {
+  color: var(--yoya-text-secondary);
+  font-size: 10px;
+}
+
+/* ============================================
+   页码容器
+   ============================================ */
+.yoya-pager__pages {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* ============================================
+   Responsive
+   ============================================ */
+@media (max-width: 768px) {
+  .yoya-pager {
+    font-size: 10px;
+    gap: 1px;
+  }
+
+  .yoya-pager__nav {
+    min-width: 20px;
+    height: 20px;
+    font-size: 11px;
+  }
+
+  .yoya-pager__number {
+    min-width: 18px;
+    height: 18px;
+    font-size: 10px;
+  }
+}
+
+/**
+ * Yoya.Theme - Form Components Styles
+ * 表单组件样式
+ */
+
+/* ============================================
+   Input 输入框
+   ============================================ */
+.yoya-input {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--yoya-padding-sm, 6px) var(--yoya-padding-md, 8px);
+  font-size: var(--yoya-font-size-md, 14px);
+  background: var(--yoya-bg);
+  border: 1px solid var(--yoya-border);
+  border-radius: var(--yoya-radius-md, 6px);
+  transition: all var(--yoya-transition-fast, 0.15s ease);
+  outline: none;
+  min-width: 200px;
+  height: var(--yoya-input-height, 32px);
+  color: var(--yoya-text-primary);
+}
+
+.yoya-input:hover {
+  border-color: var(--yoya-border-hover);
+}
+
+.yoya-input:focus {
+  border-color: var(--yoya-border-focus);
+  box-shadow: 0 0 0 2px var(--yoya-primary-alpha);
+}
+
+.yoya-input--disabled {
+  background: var(--yoya-bg-tertiary);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.yoya-input--error {
+  border-color: var(--yoya-error);
+}
+
+.yoya-input--error:focus {
+  box-shadow: 0 0 0 2px var(--yoya-error-bg);
+}
+
+.yoya-input__inner {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: inherit;
+  color: inherit;
+  min-width: 0;
+  width: 100%;
+  height: 100%;
+  padding: inherit;
+}
+
+.yoya-input__loading {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 2px solid currentColor;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  animation: buttonLoadingSpin 0.8s linear infinite;
+  margin-left: 12px;
+}
+
+/* ============================================
+   Textarea 多行输入
+   ============================================ */
+.yoya-textarea {
+  display: inline-flex;
+  align-items: flex-start;
+  padding: var(--yoya-padding-sm, 6px) var(--yoya-padding-md, 8px);
+  font-size: var(--yoya-font-size-md, 14px);
+  background: var(--yoya-bg);
+  border: 1px solid var(--yoya-border);
+  border-radius: var(--yoya-radius-md, 6px);
+  transition: all var(--yoya-transition-fast, 0.15s ease);
+  outline: none;
+  min-width: 200px;
+  min-height: 80px;
+  color: var(--yoya-text-primary);
+  resize: vertical;
+}
+
+.yoya-textarea:hover {
+  border-color: var(--yoya-border-hover);
+}
+
+.yoya-textarea:focus {
+  border-color: var(--yoya-border-focus);
+  box-shadow: 0 0 0 2px var(--yoya-primary-alpha);
+}
+
+.yoya-textarea--disabled {
+  background: var(--yoya-bg-tertiary);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.yoya-textarea--error {
+  border-color: var(--yoya-error);
+}
+
+.yoya-textarea--error:focus {
+  box-shadow: 0 0 0 2px var(--yoya-error-bg);
+}
+
+.yoya-textarea__inner {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: inherit;
+  color: inherit;
+  resize: vertical;
+  font-family: inherit;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: inherit;
+}
+
+/* ============================================
+   Select 选择器
+   ============================================ */
+.yoya-select {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--yoya-padding-sm, 6px) var(--yoya-padding-md, 8px);
+  font-size: var(--yoya-font-size-md, 14px);
+  background: var(--yoya-bg);
+  border: 1px solid var(--yoya-border);
+  border-radius: var(--yoya-radius-md, 6px);
+  transition: all var(--yoya-transition-fast, 0.15s ease);
+  outline: none;
+  min-width: 150px;
+  height: var(--yoya-input-height, 32px);
+  color: var(--yoya-text-primary);
+  cursor: pointer;
+}
+
+.yoya-select:hover {
+  border-color: var(--yoya-border-hover);
+}
+
+.yoya-select:focus {
+  border-color: var(--yoya-border-focus);
+  box-shadow: 0 0 0 2px var(--yoya-primary-alpha);
+}
+
+.yoya-select--disabled {
+  background: var(--yoya-bg-tertiary);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.yoya-select--error {
+  border-color: var(--yoya-error);
+}
+
+.yoya-select--error:focus {
+  box-shadow: 0 0 0 2px var(--yoya-error-bg);
+}
+
+.yoya-select__inner {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: inherit;
+  color: inherit;
+  cursor: inherit;
+  width: 100%;
+  height: 100%;
+}
+
+/* ============================================
+   Checkbox 复选框
+   ============================================ */
+.yoya-checkbox {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--yoya-gap-sm, 6px);
+  cursor: pointer;
+  user-select: none;
+}
+
+.yoya-checkbox__input {
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--yoya-border);
+  border-radius: 3px;
+  background: var(--yoya-bg);
+  cursor: pointer;
+  transition: all var(--yoya-transition-fast, 0.15s ease);
+}
+
+.yoya-checkbox__input:checked {
+  background: var(--yoya-primary);
+  border-color: var(--yoya-primary);
+}
+
+.yoya-checkbox:hover .yoya-checkbox__input {
+  border-color: var(--yoya-border-hover);
+}
+
+.yoya-checkbox--disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.yoya-checkbox--error {
+  color: var(--yoya-error);
+}
+
+.yoya-checkbox--error .yoya-checkbox__input {
+  border-color: var(--yoya-error);
+}
+
+/* ============================================
+   Radio 单选框
+   ============================================ */
+.yoya-radio {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--yoya-gap-sm, 6px);
+  cursor: pointer;
+  user-select: none;
+}
+
+.yoya-radio__input {
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--yoya-border);
+  border-radius: 50%;
+  background: var(--yoya-bg);
+  cursor: pointer;
+  transition: all var(--yoya-transition-fast, 0.15s ease);
+}
+
+.yoya-radio__input:checked {
+  border-color: var(--yoya-primary);
+  background: var(--yoya-primary);
+  box-shadow: inset 0 0 0 3px var(--yoya-bg);
+}
+
+.yoya-radio:hover .yoya-radio__input {
+  border-color: var(--yoya-border-hover);
+}
+
+/* ============================================
+   Form Label
+   ============================================ */
+.yoya-label {
+  display: inline-block;
+  font-size: var(--yoya-font-size-md, 14px);
+  color: var(--yoya-text-primary);
+  margin-bottom: var(--yoya-margin-xs, 4px);
+}
+
+.yoya-label--required::after {
+  content: '*';
+  color: var(--yoya-error);
+  margin-left: 4px;
+}
+
+/* ============================================
+   Form Group
+   ============================================ */
+.yoya-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--yoya-gap-xs, 4px);
+  margin-bottom: var(--yoya-margin-md, 8px);
+}
+
+/* ============================================
+   尺寸变体
+   ============================================ */
+.yoya-input--small,
+.yoya-select--small {
+  height: var(--yoya-input-height-sm, 28px);
+  font-size: var(--yoya-font-size-sm, 13px);
+  padding: var(--yoya-padding-xs, 4px) var(--yoya-padding-sm, 6px);
+}
+
+.yoya-input--large,
+.yoya-select--large {
+  height: var(--yoya-input-height-lg, 40px);
+  font-size: var(--yoya-font-size-lg, 16px);
+  padding: var(--yoya-padding-md, 8px) var(--yoya-padding-lg, 10px);
+}
+
+/* ============================================
+   Form 表单容器
+   ============================================ */
+.yoya-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--yoya-gap-md, 16px);
+  width: 100%;
+}
+
+/* ============================================
+   Checkboxes 复选框组
+   ============================================ */
+.yoya-checkboxes {
+  display: flex;
+  gap: var(--yoya-gap-sm, 12px);
+  font-size: var(--yoya-font-size-md, 14px);
+  color: var(--yoya-text-primary);
+}
+
+.yoya-checkboxes--column {
+  flex-direction: column;
+}
+
+.yoya-checkboxes--row {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.yoya-checkboxes--grid {
+  display: grid;
+  gap: var(--yoya-gap-sm, 12px);
+}
+
+.yoya-checkboxes--disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.yoya-checkboxes--error {
+  border: 1px solid var(--yoya-error);
+  border-radius: var(--yoya-radius-md, 6px);
+  padding: var(--yoya-padding-sm, 8px);
+}
+
+/* ============================================
+   Switch 开关
+   ============================================ */
+.yoya-switch {
+  display: inline-flex;
+  align-items: center;
+  width: var(--yoya-switch-width, 44px);
+  height: var(--yoya-switch-height, 22px);
+  border-radius: var(--yoya-switch-radius, 11px);
+  background: var(--yoya-switch-bg, var(--yoya-border));
+  padding: 2px;
+  cursor: pointer;
+  transition: all var(--yoya-transition-fast, 0.2s);
+  position: relative;
+  box-sizing: border-box;
+}
+
+.yoya-switch--checked {
+  background: var(--yoya-primary);
+}
+
+.yoya-switch--disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.yoya-switch--disabled .yoya-switch__wrapper {
+  cursor: not-allowed;
+}
+
+.yoya-switch--large {
+  width: 56px;
+  height: 28px;
+}
+
+.yoya-switch--large .yoya-switch__knob {
+  width: 24px;
+  height: 24px;
+}
+
+.yoya-switch--large .yoya-switch__knob--checked {
+  transform: translateX(28px);
+}
+
+.yoya-switch--small {
+  width: 32px;
+  height: 16px;
+}
+
+.yoya-switch--small .yoya-switch__knob {
+  width: 12px;
+  height: 12px;
+}
+
+.yoya-switch--small .yoya-switch__knob--checked {
+  transform: translateX(16px);
+}
+
+.yoya-switch__knob {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform var(--yoya-transition-fast, 0.2s);
+  transform: translateX(0);
+}
+
+.yoya-switch__knob--checked {
+  transform: translateX(22px);
+}
+
+.yoya-switch__wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.yoya-switch__label {
+  font-size: 14px;
+  color: var(--yoya-text-primary);
+  user-select: none;
+}
+
+.yoya-switch--disabled .yoya-switch__label {
+  opacity: 0.5;
+}
+
+/**
+ * Yoya.Theme - Message Components Styles
+ * 消息提示组件样式
+ */
+
+/* ============================================
+   VMessage 消息提示容器
+   ============================================ */
+.yoya-message {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  box-shadow: var(--yoya-message-box-shadow, 0 4px 12px rgba(0, 0, 0, 0.15));
+  min-width: 280px;
+  max-width: 400px;
+  animation: slideIn 0.3s ease;
+  position: relative;
+}
+
+/* 类型样式 */
+.yoya-message--success {
+  background: var(--yoya-message-success-bg);
+  color: var(--yoya-message-success-color);
+  border: var(--yoya-message-success-border);
+}
+
+.yoya-message--error {
+  background: var(--yoya-message-error-bg);
+  color: var(--yoya-message-error-color);
+  border: var(--yoya-message-error-border);
+}
+
+.yoya-message--warning {
+  background: var(--yoya-message-warning-bg);
+  color: var(--yoya-message-warning-color);
+  border: var(--yoya-message-warning-border);
+}
+
+.yoya-message--info {
+  background: var(--yoya-message-info-bg);
+  color: var(--yoya-message-info-color);
+  border: var(--yoya-message-info-border);
+}
+
+/* ============================================
+   VMessage 内部元素
+   ============================================ */
+.yoya-message__icon {
+  font-size: var(--yoya-message-icon-size, 18px);
+  font-weight: bold;
+  flex-shrink: 0;
+  margin-right: var(--yoya-message-icon-margin, 10px);
+}
+
+.yoya-message__text {
+  flex: 1;
+  font-size: var(--yoya-message-font-size, 14px);
+  line-height: var(--yoya-message-line-height, 1.5);
+  color: var(--yoya-message-text-color, inherit);
+}
+
+.yoya-message__close {
+  font-size: var(--yoya-message-close-size, 20px);
+  cursor: pointer;
+  padding: var(--yoya-message-close-padding, 0 4px);
+  opacity: var(--yoya-message-close-opacity, 0.7);
+  transition: opacity 0.2s;
+  flex-shrink: 0;
+  color: var(--yoya-message-close-color, inherit);
+}
+
+.yoya-message__close:hover {
+  opacity: var(--yoya-message-close-hover-opacity, 1);
+}
+
+/* ============================================
+   VMessageContainer 消息容器
+   ============================================ */
+.yoya-message-container {
+  position: fixed;
+  z-index: var(--yoya-message-z-index, 9999);
+  display: flex;
+  flex-direction: column;
+  gap: var(--yoya-message-gap, 10px);
+  padding: var(--yoya-message-container-padding, 16px);
+  max-width: var(--yoya-message-max-width, 420px);
+}
+
+/* 位置样式 */
+.yoya-message-container--top-left {
+  top: 0;
+  left: 0;
+}
+
+.yoya-message-container--top-right {
+  top: 0;
+  right: 0;
+}
+
+.yoya-message-container--top-center {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.yoya-message-container--bottom-left {
+  bottom: 0;
+  left: 0;
+}
+
+.yoya-message-container--bottom-right {
+  bottom: 0;
+  right: 0;
+}
+
+.yoya-message-container--bottom-center {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* ============================================
+   动画
+   ============================================ */
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+/* ============================================
+   Responsive
+   ============================================ */
+@media (max-width: 768px) {
+  .yoya-message {
+    min-width: unset;
+    width: calc(100% - 32px);
+    max-width: unset;
+  }
+
+  .yoya-message-container {
+    padding: var(--yoya-message-container-padding, 8px);
+    max-width: unset;
+  }
+
+  .yoya-message-container--top-center,
+  .yoya-message-container--bottom-center {
+    left: 0;
+    right: 0;
+    transform: none;
+  }
+}
+
+/**
+ * Yoya.Theme - Detail/Descriptions Components Styles
+ * 详情展示组件样式
+ */
+
+/* ============================================
+   VDetail 详情容器
+   ============================================ */
+.yoya-detail {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: var(--yoya-descriptions-font-size, 14px);
+  color: var(--yoya-descriptions-text, var(--yoya-text-primary, #1a1c1f));
+  background: var(--yoya-descriptions-bg, transparent);
+}
+
+/* ============================================
+   VDetail 标题
+   ============================================ */
+.yoya-detail__title {
+  padding: var(--yoya-descriptions-title-padding, 12px 0);
+  font-size: var(--yoya-descriptions-title-size, 16px);
+  font-weight: var(--yoya-descriptions-title-font-weight, 600);
+  color: var(--yoya-descriptions-title-color, var(--yoya-text-primary, #1a1c1f));
+  margin-bottom: var(--yoya-descriptions-title-margin, 12px);
+}
+
+/* ============================================
+   VDetail 表格容器
+   ============================================ */
+.yoya-detail__table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.yoya-detail__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: inherit;
+}
+
+.yoya-detail__table--bordered {
+  border: 1px solid var(--yoya-descriptions-border, var(--yoya-border, #e0e0e0));
+}
+
+/* ============================================
+   VDetail 表格行
+   ============================================ */
+.yoya-detail__row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.yoya-detail__row--bordered {
+  border-bottom: 1px solid var(--yoya-descriptions-border, var(--yoya-border, #e0e0e0));
+}
+
+/* ============================================
+   VDetail 标签单元格
+   ============================================ */
+.yoya-detail__label {
+  padding: var(--yoya-descriptions-padding, 12px 16px);
+  background: var(--yoya-descriptions-label-bg, var(--yoya-bg-secondary, #f7f8fa));
+  color: var(--yoya-descriptions-label-color, var(--yoya-text-secondary));
+  font-weight: var(--yoya-descriptions-label-font-weight, 500);
+  text-align: left;
+  width: var(--yoya-descriptions-label-width, 120px);
+  box-sizing: border-box;
+}
+
+.yoya-detail__label--bordered {
+  border-right: 1px solid var(--yoya-descriptions-border, var(--yoya-border, #e0e0e0));
+}
+
+/* ============================================
+   VDetail 内容单元格
+   ============================================ */
+.yoya-detail__content {
+  padding: var(--yoya-descriptions-padding, 12px 16px);
+  color: var(--yoya-descriptions-content-color, var(--yoya-text-primary, #1a1c1f));
+  box-sizing: border-box;
+}
+
+.yoya-detail__content--bordered {
+  border-right: 1px solid var(--yoya-descriptions-border, var(--yoya-border, #e0e0e0));
+}
+
+/* ============================================
+   VDetail 纵向布局
+   ============================================ */
+.yoya-detail__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--yoya-descriptions-vertical-gap, 16px);
+}
+
+.yoya-detail__grid-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--yoya-descriptions-vertical-item-gap, 6px);
+}
+
+.yoya-detail__grid-label {
+  font-size: var(--yoya-descriptions-label-font-size, 12px);
+  color: var(--yoya-descriptions-label-color, var(--yoya-text-secondary));
+  font-weight: var(--yoya-descriptions-label-font-weight, 500);
+}
+
+.yoya-detail__grid-content {
+  font-size: var(--yoya-descriptions-content-font-size, 14px);
+  color: var(--yoya-descriptions-content-color, var(--yoya-text-primary, #1a1c1f));
+  padding: var(--yoya-descriptions-vertical-content-padding, 8px 0);
+}
+
+/* ============================================
+   Bordered 模式
+   ============================================ */
+.yoya-detail--bordered .yoya-detail__label {
+  background: var(--yoya-descriptions-label-bg, var(--yoya-bg-secondary, #f7f8fa));
+}
+
+/* ============================================
+   表格内的 Code 元素
+   ============================================ */
+.yoya-detail__table code {
+  padding: var(--yoya-code-padding, 2px 6px);
+  font-size: var(--yoya-code-font-size, 0.85em);
+  font-family: var(--yoya-code-font-family, 'Menlo', 'Monaco', 'Courier New', monospace);
+  background: var(--yoya-code-bg, var(--yoya-bg-tertiary));
+  color: var(--yoya-code-color, var(--yoya-text-primary));
+  border-radius: var(--yoya-code-radius, 4px);
+  border: var(--yoya-code-border, 1px solid var(--yoya-border-light));
+}
+
+/* ============================================
+   Responsive
+   ============================================ */
+@media (max-width: 768px) {
+  .yoya-detail__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .yoya-detail__label {
+    width: auto;
+  }
+
+  .yoya-detail__row {
+    flex-direction: column;
+  }
+}
+
+/**
+ * Yoya.Theme - Body Component Styles
+ * 页面整体背景容器样式
+ */
+
+/* ============================================
+   VBody 页面背景容器
+   ============================================ */
+.yoya-body {
+  /* 背景色 */
+  background: var(--yoya-body-bg, var(--yoya-bg, white));
+  background-color: var(--yoya-body-bg-color, var(--yoya-body-bg, var(--yoya-bg, white)));
+
+  /* 字体颜色 */
+  color: var(--yoya-body-color, var(--yoya-text-primary, #1a1c1f));
+
+  /* 最小高度 */
+  min-height: var(--yoya-body-min-height, 100vh);
+
+  /* 宽度 */
+  width: var(--yoya-body-width, 100%);
+
+  /* 布局 */
+  display: var(--yoya-body-display, flex);
+  flex-direction: var(--yoya-body-flex-direction, column);
+  align-items: var(--yoya-body-align-items, stretch);
+
+  /* 内边距 */
+  padding: var(--yoya-body-padding, 0);
+  margin: var(--yoya-body-margin, 0);
+  box-sizing: border-box;
+
+  /* 过渡效果 */
+  transition: background-color 0.3s ease, min-height 0.3s ease, color 0.3s ease;
+}
+
+/* ============================================
+   VBody 全屏模式
+   ============================================ */
+.yoya-body--fullscreen {
+  min-height: var(--yoya-body-min-height, 100vh);
+  width: var(--yoya-body-width, 100%);
+}
+
+/* ============================================
+   VBody 内容对齐
+   ============================================ */
+.yoya-body--center {
+  align-items: center;
+  justify-content: center;
+}
+
+.yoya-body--align-top {
+  align-items: flex-start;
+}
+
+.yoya-body--align-bottom {
+  align-items: flex-end;
+}
+
+.yoya-body--align-stretch {
+  align-items: stretch;
+}
+
+/* ============================================
+   Responsive
+   ============================================ */
+@media (max-width: 768px) {
+  .yoya-body {
+    min-height: var(--yoya-body-min-height-mobile, 100vh);
+    padding: var(--yoya-body-padding-mobile, 0);
+  }
+}
+
+/**
+ * Yoya.Theme - Code Component Styles
+ * 代码展示组件样式
+ */
+
+/* ============================================
+   内联 Code 元素
+   ============================================ */
+code {
+  padding: var(--yoya-code-padding, 2px 6px);
+  font-size: var(--yoya-code-font-size, 0.9em);
+  font-family: var(--yoya-code-font-family, 'Menlo', 'Monaco', 'Courier New', monospace);
+  background: var(--yoya-code-bg, var(--yoya-bg-tertiary));
+  color: var(--yoya-code-color, var(--yoya-text-primary));
+  border-radius: var(--yoya-code-radius, 4px);
+  border: var(--yoya-code-border, 1px solid var(--yoya-border-light));
+}
+
+/* ============================================
+   VCode 代码块容器
+   ============================================ */
+.yoya-code {
+  display: flex;
+  flex-direction: column;
+  background: var(--yoya-code-block-bg, var(--yoya-bg-secondary));
+  border-radius: var(--yoya-code-block-radius, 8px);
+  border: var(--yoya-code-block-border, 1px solid var(--yoya-border));
+  overflow: hidden;
+}
+
+/* 代码块头部（标题栏） */
+.yoya-code__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--yoya-code-header-padding, 8px 12px);
+  background: var(--yoya-code-header-bg, var(--yoya-bg-tertiary));
+  border-bottom: var(--yoya-code-header-border, 1px solid var(--yoya-border-light));
+  min-height: 40px;
+}
+
+.yoya-code__title {
+  font-size: var(--yoya-code-title-size, 13px);
+  font-weight: var(--yoya-code-title-weight, 500);
+  color: var(--yoya-code-title-color, var(--yoya-text-primary));
+}
+
+.yoya-code__copy-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: var(--yoya-code-copy-padding, 4px 8px);
+  font-size: var(--yoya-code-copy-size, 12px);
+  background: var(--yoya-code-copy-bg, var(--yoya-bg));
+  color: var(--yoya-code-copy-color, var(--yoya-text-secondary));
+  border: var(--yoya-code-copy-border, 1px solid var(--yoya-border));
+  border-radius: var(--yoya-code-copy-radius, 4px);
+  cursor: pointer;
+  transition: all var(--yoya-transition-fast, 0.15s ease);
+}
+
+.yoya-code__copy-btn:hover {
+  background: var(--yoya-code-copy-hover-bg, var(--yoya-bg-hover));
+  color: var(--yoya-code-copy-hover-color, var(--yoya-text-primary));
+}
+
+/* 代码内容区 */
+.yoya-code__content {
+  position: relative;
+  overflow: auto;
+  padding: var(--yoya-code-content-padding, 12px);
+}
+
+.yoya-code__content pre {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  overflow-x: auto;
+}
+
+.yoya-code__content code {
+  padding: 0;
+  background: transparent;
+  border: none;
+  font-size: var(--yoya-code-content-font-size, 13px);
+  line-height: var(--yoya-code-line-height, 1.5);
+  color: var(--yoya-code-content-color, var(--yoya-text-primary));
+}
+
+/* 行号 */
+.yoya-code--line-numbers .yoya-code__content pre {
+  counter-reset: line;
+}
+
+.yoya-code--line-numbers .yoya-code__content code {
+  display: block;
+}
+
+/* ============================================
+   表格中的 Code 元素
+   ============================================ */
+table code {
+  background: var(--yoya-code-table-bg, var(--yoya-bg-tertiary));
+  color: var(--yoya-code-table-color, var(--yoya-text-primary));
+  border-color: var(--yoya-code-table-border, var(--yoya-border-light));
+}
+
+/**
+ * Yoya.Theme - Table Components Styles
+ * 表格组件样式
+ */
+
+/* ============================================
+   表格基础样式
+   ============================================ */
+.yoya-card table,
+table.yoya-table,
+table.yoya-api-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--yoya-table-font-size, 14px);
+}
+
+/* ============================================
+   表格头部
+   ============================================ */
+.yoya-card table th,
+table.yoya-table th,
+table.yoya-api-table th {
+  padding: var(--yoya-table-header-padding, 12px 16px);
+  text-align: left;
+  font-weight: var(--yoya-table-header-font-weight, 600);
+  color: var(--yoya-text-primary, #333) !important;
+  background: var(--yoya-bg-secondary, #f7f8fa) !important;
+  border-bottom: 2px solid var(--yoya-border, #e0e0e0) !important;
+}
+
+/* ============================================
+   表格单元格
+   ============================================ */
+.yoya-card table td,
+table.yoya-table td,
+table.yoya-api-table td {
+  padding: var(--yoya-table-cell-padding, 12px 16px);
+  color: var(--yoya-text-primary, #333);
+  border-bottom: 1px solid var(--yoya-border, #e0e0e0);
+}
+
+/* ============================================
+   表格行
+   ============================================ */
+.yoya-card table tr:hover,
+table.yoya-table tr:hover {
+  background: var(--yoya-bg-hover, #f0f0f0);
+}
+
+/* ============================================
+   Bordered 模式
+   ============================================ */
+.yoya-card table.yoya-table--bordered th,
+.yoya-card table.yoya-table--bordered td,
+table.yoya-table.yoya-table--bordered th,
+table.yoya-table.yoya-table--bordered td {
+  border: 1px solid var(--yoya-border, #e0e0e0);
+}
+
+/* ============================================
+   Compact 模式
+   ============================================ */
+.yoya-card table.yoya-table--compact th,
+.yoya-card table.yoya-table--compact td,
+table.yoya-table.yoya-table--compact th,
+table.yoya-table.yoya-table--compact td {
+  padding: var(--yoya-table-compact-padding, 8px 12px);
+}
+
+/* ============================================
+   表格内的 Code 元素
+   ============================================ */
+.yoya-card table code,
+table.yoya-table code {
+  padding: var(--yoya-code-padding, 2px 6px);
+  font-size: var(--yoya-code-font-size, 0.85em);
+  font-family: var(--yoya-code-font-family, 'Menlo', 'Monaco', 'Courier New', monospace);
+  background: var(--yoya-bg-tertiary, #f0f0f0);
+  color: var(--yoya-text-primary, #333);
+  border-radius: var(--yoya-code-radius, 4px);
+  border: var(--yoya-code-border, 1px solid var(--yoya-border-light));
+}
+
+/* ============================================
+   Dark 主题覆盖
+   ============================================ */
+[data-theme='islands-dark'] .yoya-card table th,
+[data-theme='islands-dark'] table.yoya-table th,
+[data-theme='islands-dark'] table.yoya-api-table th {
+  background: var(--yoya-bg-secondary, #2a2d35) !important;
+  color: var(--yoya-text-primary, #e0e0e0) !important;
+  border-bottom-color: var(--yoya-border, #444) !important;
+}
+
+[data-theme='islands-dark'] .yoya-card table td,
+[data-theme='islands-dark'] table.yoya-table td,
+[data-theme='islands-dark'] table.yoya-api-table td {
+  color: var(--yoya-text-primary, #e0e0e0);
+  border-bottom-color: var(--yoya-border, #444);
+}
+
+[data-theme='islands-dark'] .yoya-card table tr:hover,
+[data-theme='islands-dark'] table.yoya-table tr:hover {
+  background: var(--yoya-bg-hover, #3a3d45);
+}
+
+[data-theme='islands-dark'] .yoya-card table code,
+[data-theme='islands-dark'] table.yoya-table code {
+  background: var(--yoya-bg-tertiary, #3a3d45);
+  color: var(--yoya-text-primary, #e0e0e0);
+  border-color: var(--yoya-border-light, #555);
+}
+
+/* ============================================
+   Responsive
+   ============================================ */
+@media (max-width: 768px) {
+  .yoya-card table,
+  table.yoya-table {
+    font-size: var(--yoya-table-font-size-mobile, 13px);
+  }
+
+  .yoya-card table th,
+  .yoya-card table td,
+  table.yoya-table th,
+  table.yoya-table td {
+    padding: var(--yoya-table-mobile-padding, 8px 10px);
+  }
+}
+
+/**
+ * Yoya.Theme - Field Component Styles
+ * vField 可编辑字段组件样式
+ */
+
+/* ============================================
+   vField 基础样式
+   ============================================ */
+.yoya-field {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--yoya-field-gap, 6px);
+  color: var(--yoya-field-text-color, var(--yoya-text, #333));
+}
+
+/* ============================================
+   显示容器
+   ============================================ */
+.yoya-field__show-container {
+  display: flex;
+  align-items: center;
+  gap: var(--yoya-field-show-gap, 4px);
+  height: var(--yoya-field-show-height, 32px);
+  padding: var(--yoya-field-show-padding, 8px 12px);
+  border-radius: var(--yoya-field-radius, 6px);
+  border: var(--yoya-field-show-border, 1px solid transparent);
+  background: var(--yoya-field-show-bg, transparent);
+  color: var(--yoya-field-text-color, var(--yoya-text, #333));
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.yoya-field__show-container:hover {
+  background: var(--yoya-field-show-hover-bg, rgba(0,0,0,0.03));
+  border-color: var(--yoya-field-show-hover-border, var(--yoya-border));
+}
+
+/* ============================================
+   编辑容器
+   ============================================ */
+.yoya-field__edit-container {
+  display: none;
+  align-items: center;
+  gap: var(--yoya-field-edit-gap, 6px);
+  width: 100%;
+  box-sizing: border-box;
+  padding: var(--yoya-field-edit-padding, 4px);
+  background: var(--yoya-field-edit-bg, var(--yoya-bg-secondary, #f7f8fa));
+  border-radius: var(--yoya-field-radius, 6px);
+  border: var(--yoya-field-edit-border, 1px solid var(--yoya-border, #e0e0e0));
+  box-shadow: var(--yoya-field-edit-shadow, 0 2px 8px rgba(0,0,0,0.1));
+  color: var(--yoya-field-text-color, var(--yoya-text, #333));
+}
+
+/* ============================================
+   编辑区域
+   ============================================ */
+.yoya-field__edit-el {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  color: inherit;
+}
+
+/* ============================================
+   按钮容器
+   ============================================ */
+.yoya-field__btn-container {
+  display: flex;
+  gap: var(--yoya-field-btn-gap, 4px);
+}
+
+/* ============================================
+   保存按钮
+   ============================================ */
+.yoya-field__btn-save {
+  min-width: var(--yoya-field-btn-size, 24px);
+  height: var(--yoya-field-btn-size, 24px);
+  padding: var(--yoya-field-btn-padding, 0 6px);
+  border: var(--yoya-field-save-border, 1px solid #28a745);
+  border-radius: var(--yoya-field-btn-radius, 4px);
+  background: var(--yoya-field-save-bg, #28a745);
+  color: var(--yoya-field-save-color, white);
+  font-size: var(--yoya-field-btn-font-size, 11px);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.yoya-field__btn-save:hover {
+  background: var(--yoya-field-save-hover-bg, #218838);
+}
+
+/* ============================================
+   取消按钮
+   ============================================ */
+.yoya-field__btn-cancel {
+  min-width: var(--yoya-field-btn-size, 24px);
+  height: var(--yoya-field-btn-size, 24px);
+  padding: var(--yoya-field-btn-padding, 0 6px);
+  border: var(--yoya-field-cancel-border, 1px solid var(--yoya-border, #e0e0e0));
+  border-radius: var(--yoya-field-btn-radius, 4px);
+  background: var(--yoya-field-cancel-bg, var(--yoya-bg-secondary, #f7f8fa));
+  color: var(--yoya-field-cancel-color, var(--yoya-text-secondary, #666));
+  font-size: var(--yoya-field-btn-font-size, 11px);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.yoya-field__btn-cancel:hover {
+  background: var(--yoya-field-cancel-hover-bg, var(--yoya-bg-tertiary, #f0f0f0));
+}
+
+/* ============================================
+   编辑图标
+   ============================================ */
+.yoya-field__edit-icon {
+  font-size: var(--yoya-field-edit-icon-size, 14px);
+  color: var(--yoya-field-edit-icon-color, #999);
+  opacity: 0;
+  transition: opacity 0.2s;
+  margin-left: var(--yoya-field-edit-icon-margin, 4px);
+  cursor: pointer;
+}
+
+.yoya-field__show-container:hover .yoya-field__edit-icon {
+  opacity: 1;
+}
+
+/* ============================================
+   禁用状态
+   ============================================ */
+.yoya-field--disabled {
+  opacity: var(--yoya-field-disabled-opacity, 0.5);
+  cursor: var(--yoya-field-disabled-cursor, not-allowed);
+  pointer-events: none;
+}
+
+/* ============================================
+   加载中状态
+   ============================================ */
+.yoya-field--loading {
+  opacity: var(--yoya-field-loading-opacity, 0.7);
+  pointer-events: none;
+}
+
+/* ============================================
+   Dark 主题覆盖
+   ============================================ */
+[data-theme='islands-dark'] .yoya-field {
+  color: var(--yoya-field-text-color, var(--yoya-text, #e0e0e0)) !important;
+}
+
+[data-theme='islands-dark'] .yoya-field__show-container {
+  color: var(--yoya-field-text-color, var(--yoya-text, #e0e0e0)) !important;
+}
+
+[data-theme='islands-dark'] .yoya-field__show-container:hover {
+  background: var(--yoya-field-show-hover-bg, rgba(255,255,255,0.03)) !important;
+  border-color: var(--yoya-field-show-hover-border, var(--yoya-border, #404040)) !important;
+}
+
+[data-theme='islands-dark'] .yoya-field__edit-container {
+  background: var(--yoya-field-edit-bg, var(--yoya-bg-secondary, #2a2a2a)) !important;
+  border-color: var(--yoya-field-edit-border, 1px solid var(--yoya-border, #404040)) !important;
+  color: var(--yoya-field-text-color, var(--yoya-text, #e0e0e0)) !important;
+}
+
+[data-theme='islands-dark'] .yoya-field__edit-el {
+  color: var(--yoya-field-text-color, var(--yoya-text, #e0e0e0)) !important;
+}
+
+[data-theme='islands-dark'] .yoya-field__edit-icon {
+  color: var(--yoya-field-edit-icon-color, #888) !important;
+}
+
+[data-theme='islands-dark'] .yoya-field__btn-save {
+  color: var(--yoya-field-save-color, white) !important;
+}
+
+[data-theme='islands-dark'] .yoya-field__btn-cancel {
+  background: var(--yoya-field-cancel-bg, var(--yoya-bg-secondary, #2a2a2a)) !important;
+  color: var(--yoya-field-cancel-color, var(--yoya-text-secondary, #a0a0a0)) !important;
+  border-color: var(--yoya-field-cancel-border, 1px solid var(--yoya-border, #404040)) !important;
+}
+
+[data-theme='islands-dark'] .yoya-field__btn-cancel:hover {
+  background: var(--yoya-field-cancel-hover-bg, var(--yoya-bg-tertiary, #3a3a3a)) !important;
+}
+
+/* ============================================
+   Responsive
+   ============================================ */
+@media (max-width: 768px) {
+  .yoya-field {
+    font-size: var(--yoya-field-font-size-mobile, 13px);
+  }
+
+  .yoya-field__show-container {
+    height: var(--yoya-field-show-height-mobile, 28px);
+    padding: var(--yoya-field-show-padding-mobile, 6px 10px);
+  }
+}
+
+/**
+ * Yoya.Theme - Box Component Styles
+ * 通用容器组件样式
+ */
+
+/* ============================================
+   基础 Box 样式
+   ============================================ */
+.yoya-box {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  color: inherit;
+  box-sizing: border-box;
+  border-radius: var(--yoya-radius-md, 6px);
+  transition: all var(--yoya-transition-normal, 0.2s) ease;
+}
+
+/* ============================================
+   阴影状态
+   ============================================ */
+.yoya-box--shadowed {
+  box-shadow: var(--yoya-shadow, 0 4px 12px rgba(30, 32, 35, 0.08));
+}
+
+.yoya-box--shadowed:hover {
+  box-shadow: var(--yoya-shadow-hover, 0 6px 16px rgba(30, 32, 35, 0.15));
+}
+
+/* ============================================
+   边框状态
+   ============================================ */
+.yoya-box--bordered {
+  border: 1px solid var(--yoya-border, #e0e0e0);
+}
+
+/* ============================================
+   背景色辅助类
+   ============================================ */
+.yoya-box--bg-primary {
+  background-color: var(--yoya-primary);
+  color: var(--yoya-text-inverse);
+}
+
+.yoya-box--bg-secondary {
+  background-color: var(--yoya-bg-secondary);
+}
+
+.yoya-box--bg-tertiary {
+  background-color: var(--yoya-bg-tertiary);
+}
+
+.yoya-box--bg-success {
+  background-color: var(--yoya-success-bg);
+  color: var(--yoya-success);
+}
+
+.yoya-box--bg-warning {
+  background-color: var(--yoya-warning-bg);
+  color: var(--yoya-warning);
+}
+
+.yoya-box--bg-error {
+  background-color: var(--yoya-error-bg);
+  color: var(--yoya-error);
+}
+
+.yoya-box--bg-info {
+  background-color: var(--yoya-info-bg);
+  color: var(--yoya-info);
+}
+
+/* ============================================
+   圆角辅助类
+   ============================================ */
+.yoya-box--radius-sm {
+  border-radius: var(--yoya-radius-sm, 4px);
+}
+
+.yoya-box--radius-md {
+  border-radius: var(--yoya-radius-md, 6px);
+}
+
+.yoya-box--radius-lg {
+  border-radius: var(--yoya-radius-lg, 8px);
+}
+
+.yoya-box--radius-xl {
+  border-radius: var(--yoya-radius-xl, 12px);
+}
+
+.yoya-box--radius-full {
+  border-radius: 50%;
+}
+
+/* ============================================
+   内边距辅助类
+   ============================================ */
+.yoya-box--padding-xs {
+  padding: var(--yoya-padding-xs, 4px);
+}
+
+.yoya-box--padding-sm {
+  padding: var(--yoya-padding-sm, 6px);
+}
+
+.yoya-box--padding-md {
+  padding: var(--yoya-padding-md, 8px);
+}
+
+.yoya-box--padding-lg {
+  padding: var(--yoya-padding-lg, 10px);
+}
+
+.yoya-box--padding-xl {
+  padding: var(--yoya-padding-xl, 16px);
+}
+
+/* ============================================
+   外边距辅助类
+   ============================================ */
+.yoya-box--margin-xs {
+  margin: var(--yoya-margin-xs, 4px);
+}
+
+.yoya-box--margin-sm {
+  margin: var(--yoya-margin-sm, 6px);
+}
+
+.yoya-box--margin-md {
+  margin: var(--yoya-margin-md, 8px);
+}
+
+.yoya-box--margin-lg {
+  margin: var(--yoya-margin-lg, 10px);
+}
+
+.yoya-box--margin-xl {
+  margin: var(--yoya-margin-xl, 16px);
+}
+
+/**
+ * Yoya.Theme - Switchers Component Styles
+ * 分段控制器组件样式
+ */
+
+/* ============================================
+   基础 Switchers 样式
+   ============================================ */
+.yoya-switchers {
+  display: inline-flex;
+  align-items: center;
+  background: var(--yoya-bg-secondary, #f5f5f5);
+  border-radius: var(--yoya-radius-md, 6px);
+  padding: var(--yoya-padding-xs, 4px);
+  gap: var(--yoya-gap-xs, 4px);
+  box-sizing: border-box;
+}
+
+/* ============================================
+   选项项样式
+   ============================================ */
+.yoya-switchers__item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--yoya-padding-sm, 6px) var(--yoya-padding-md, 8px);
+  font-size: var(--yoya-font-size-md, 14px);
+  font-weight: 400;
+  color: var(--yoya-text-secondary, #666);
+  background: transparent;
+  border: none;
+  border-radius: var(--yoya-radius-sm, 4px);
+  cursor: pointer;
+  transition: all var(--yoya-transition-fast, 0.15s) ease;
+  white-space: nowrap;
+  user-select: none;
+}
+
+.yoya-switchers__item:hover:not(.yoya-switchers__item--disabled) {
+  background: var(--yoya-bg-hover, #e8eaed);
+  color: var(--yoya-text-primary, #333);
+}
+
+/* ============================================
+   选中状态
+   ============================================ */
+.yoya-switchers__item--active {
+  background: var(--yoya-bg, #ffffff);
+  color: var(--yoya-text-primary, #1a1c1f);
+  font-weight: 500;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* ============================================
+   禁用状态
+   ============================================ */
+.yoya-switchers--disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.yoya-switchers__item--disabled {
+  color: var(--yoya-text-disabled, #b8bac0);
+  cursor: not-allowed;
+  background: transparent !important;
+}
+
+/* ============================================
+   尺寸 - Small
+   ============================================ */
+.yoya-switchers--small {
+  padding: 2px;
+  gap: 2px;
+}
+
+.yoya-switchers--small .yoya-switchers__item {
+  padding: 4px 8px;
+  font-size: var(--yoya-font-size-sm, 12px);
+  border-radius: 3px;
+}
+
+/* ============================================
+   尺寸 - Medium (默认)
+   ============================================ */
+.yoya-switchers--medium {
+  padding: var(--yoya-padding-xs, 4px);
+  gap: var(--yoya-gap-xs, 4px);
+}
+
+.yoya-switchers--medium .yoya-switchers__item {
+  padding: var(--yoya-padding-sm, 6px) var(--yoya-padding-md, 8px);
+  font-size: var(--yoya-font-size-md, 14px);
+  border-radius: var(--yoya-radius-sm, 4px);
+}
+
+/* ============================================
+   尺寸 - Large
+   ============================================ */
+.yoya-switchers--large {
+  padding: 6px;
+  gap: 6px;
+}
+
+.yoya-switchers--large .yoya-switchers__item {
+  padding: 8px 16px;
+  font-size: var(--yoya-font-size-lg, 16px);
+  border-radius: var(--yoya-radius-md, 6px);
+}
+
+/* ============================================
+   主题色变体
+   ============================================ */
+
+/* 主色调选中样式 */
+.yoya-switchers--primary .yoya-switchers__item--active {
+  background: var(--yoya-primary);
+  color: var(--yoya-text-inverse, #ffffff);
+}
+
+/* 成功色选中样式 */
+.yoya-switchers--success .yoya-switchers__item--active {
+  background: var(--yoya-success);
+  color: var(--yoya-text-inverse, #ffffff);
+}
+
+/* 警告色选中样式 */
+.yoya-switchers--warning .yoya-switchers__item--active {
+  background: var(--yoya-warning);
+  color: var(--yoya-text-primary, #1a1c1f);
+}
+
+/* 危险色选中样式 */
+.yoya-switchers--danger .yoya-switchers__item--active {
+  background: var(--yoya-error);
+  color: var(--yoya-text-inverse, #ffffff);
+}
+
+/* ============================================
+   块级模式（占满容器）
+   ============================================ */
+.yoya-switchers--block {
+  display: flex;
+  width: 100%;
+}
+
+.yoya-switchers--block .yoya-switchers__item {
+  flex: 1;
+}
+
+/* ============================================
+   竖向排列
+   ============================================ */
+.yoya-switchers--vertical {
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.yoya-switchers--vertical .yoya-switchers__item {
+  justify-content: flex-start;
+}
+
+/**
+ * Yoya.Theme - Router Component Styles
+ * 路由组件样式（包括 VRouterView 和 VRouterViews）
+ */
+
+/* ============================================
+   VRouterView - 单个路由视图容器
+   ============================================ */
+.yoya-router-view {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: auto;
+  background: var(--yoya-bg);
+}
+
+/* ============================================
+   VRouterViews - 多路由视图容器（类似 Tabs）
+   ============================================ */
+.yoya-router-views {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+  background: var(--yoya-bg);
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/* ============================================
+   视图栏容器
+   ============================================ */
+.yoya-router-views__header {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  border-bottom: 1px solid var(--yoya-border);
+  background: var(--yoya-bg-secondary);
+  overflow-x: visible;
+  overflow-y: hidden;
+  flex-shrink: 0;
+  margin-bottom: 0;
+  flex-wrap: nowrap;
+}
+
+/* 左侧标签容器 */
+.yoya-router-views__tabs {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex: 1 1 auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+  min-width: 0;
+  flex-wrap: nowrap;
+  /* 隐藏滚动条但允许滚动 */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+  scroll-behavior: smooth;
+}
+
+.yoya-router-views__tabs::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+/* 右侧按钮区 */
+.yoya-router-views__actions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0 4px;
+  flex-shrink: 0;
+}
+
+/* 视图数量标签 */
+.yoya-router-views__count {
+  font-size: 12px;
+  color: var(--yoya-text-secondary);
+  padding: 2px 6px;
+}
+
+/* 下拉菜单按钮 */
+.yoya-router-views__menu-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 14px;
+  color: var(--yoya-text-secondary);
+  transition: all 0.15s ease;
+}
+
+.yoya-router-views__menu-btn:hover {
+  background: var(--yoya-bg-hover);
+  color: var(--yoya-text-primary);
+}
+
+/* 下拉菜单 */
+.yoya-router-views__dropdown {
+  position: absolute;
+  top: 100%;
+  right: 4px;
+  margin-top: 4px;
+  background-color: var(--yoya-bg);
+  border: 1px solid var(--yoya-border);
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  z-index: 1000;
+  display: none;
+  min-width: 200px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+/* ============================================
+   单个视图标签样式
+   ============================================ */
+.yoya-router-views__tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  padding-right: 8px;
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--yoya-text-secondary);
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  transition: all var(--yoya-transition-fast, 0.15s ease);
+  user-select: none;
+  white-space: nowrap;
+  position: relative;
+  min-width: max-content;
+  flex-shrink: 0;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  margin-top: 0;
+}
+
+.yoya-router-views__tab:hover {
+  background: var(--yoya-bg-hover);
+}
+
+/* 视图标签激活状态 */
+.yoya-router-views__tab--active {
+  color: var(--yoya-text-primary);
+  background: var(--yoya-bg);
+  border-bottom-color: var(--yoya-primary);
+  font-weight: 500;
+}
+
+/* ============================================
+   视图图标
+   ============================================ */
+.yoya-router-views__tab-icon {
+  display: inline-flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 1;
+  opacity: 0.7;
+}
+
+/* ============================================
+   视图标签标题
+   ============================================ */
+.yoya-router-views__tab-title {
+  flex: 0 0 auto;
+  min-width: auto;
+  white-space: nowrap;
+  letter-spacing: 0;
+}
+
+/* 标题隐藏状态 */
+.yoya-router-views__tab-title--hidden {
+  display: none;
+}
+
+/* 标签宽度紧凑模式 */
+.yoya-router-views__tab--compact {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.yoya-router-views__tab--compact .yoya-router-views__tab-title {
+  display: none;
+}
+
+/* ============================================
+   关闭按钮
+   ============================================ */
+.yoya-router-views__tab-close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 3px;
+  font-size: 14px;
+  line-height: 1;
+  color: var(--yoya-text-secondary);
+  cursor: pointer;
+  transition: all 0.1s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* 鼠标悬停标签时显示关闭按钮（包括非激活标签） */
+.yoya-router-views__tab:hover .yoya-router-views__tab-close {
+  opacity: 0.7;
+  visibility: visible;
+}
+
+/* 激活标签的关闭按钮也响应 hover */
+.yoya-router-views__tab--active:hover .yoya-router-views__tab-close {
+  opacity: 0.7;
+  visibility: visible;
+}
+
+.yoya-router-views__tab-close:hover {
+  opacity: 1;
+  background: var(--yoya-error-bg);
+  color: var(--yoya-error);
+}
+
+/* 视图标签不可关闭时隐藏关闭按钮 */
+.yoya-router-views__tab--unclosable .yoya-router-views__tab-close {
+  display: none !important;
+}
+
+/* ============================================
+   内容容器
+   ============================================ */
+.yoya-router-views__content-container {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+}
+
+/* ============================================
+   单个视图内容
+   ============================================ */
+.yoya-router-views__content {
+  display: none;
+  flex: 1;
+  overflow: auto;
+  background: var(--yoya-bg);
+}
+
+.yoya-router-views__content--active {
+  display: block;
+}
+
+/* ============================================
+   closable 状态 - 显示关闭按钮
+   ============================================ */
+.yoya-router-views--closable .yoya-router-views__tab-close {
+  display: none;
+}
+
+.yoya-router-views--closable .yoya-router-views__tab:hover .yoya-router-views__tab-close {
+  display: flex;
+}
+
+/* ============================================
+   compact 紧凑模式
+   ============================================ */
+.yoya-router-views--compact .yoya-router-views__tab {
+  padding: 4px 8px;
+  padding-right: 6px;
+  font-size: 12px;
+}
+
+/* ============================================
+   responsive
+   ============================================ */
+@media (max-width: 768px) {
+  .yoya-router-views__tab {
+    padding: 6px 8px;
+    font-size: 12px;
+  }
+}
+
+/* Avatar Component */
+.yoya-avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: var(--yoya-primary);
+  color: var(--yoya-text-inverse);
+  font-weight: 500;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.yoya-avatar--circle {
+  border-radius: 50%;
+}
+
+.yoya-avatar--square {
+  border-radius: 4px;
+}
+
+/* Avatar Group */
+.yoya-avatar-group {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.yoya-avatar-group .yoya-avatar {
+  border: 2px solid var(--yoya-bg);
+  margin-left: -8px;
+}
+
+.yoya-avatar-group .yoya-avatar:first-child {
+  margin-left: 0;
+}
+
+/* Badge Component */
+.yoya-badge {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  line-height: 1;
+}
+
+.yoya-badge__overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+  transform-origin: 100% 0%;
+  background-color: var(--yoya-error);
+  color: var(--yoya-text-inverse);
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+  padding: 0 6px;
+  height: 20px;
+  line-height: 20px;
+  border-radius: 10px;
+  border: 1px solid var(--yoya-bg);
+  z-index: 1;
+}
+
+.yoya-badge--dot {
+  position: relative;
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--yoya-error);
+}
+
+.yoya-badge--dot .yoya-badge__overlay {
+  display: none;
+}
+
+.yoya-badge--success .yoya-badge__overlay,
+.yoya-badge--success.yoya-badge--dot {
+  background-color: var(--yoya-success);
+}
+
+.yoya-badge--error .yoya-badge__overlay,
+.yoya-badge--error.yoya-badge--dot {
+  background-color: var(--yoya-error);
+}
+
+.yoya-badge--warning .yoya-badge__overlay,
+.yoya-badge--warning.yoya-badge--dot {
+  background-color: var(--yoya-warning);
+}
+
+.yoya-badge--processing .yoya-badge__overlay,
+.yoya-badge--processing.yoya-badge--dot {
+  background-color: var(--yoya-primary);
+}
+
+.yoya-badge--default .yoya-badge__overlay,
+.yoya-badge--default.yoya-badge--dot {
+  background-color: var(--yoya-text-tertiary);
+}
+
+/* Badge standalone mode */
+.yoya-badge--standalone {
+  position: static;
+  display: inline-block;
+}
+
+.yoya-badge--standalone .yoya-badge__overlay {
+  position: static;
+  transform: none;
+  display: inline-block;
+}
+
+/* Progress Component */
+.yoya-progress {
+  display: inline-block;
+  width: 100%;
+}
+
+.yoya-progress__outer {
+  position: relative;
+  background-color: var(--yoya-bg-tertiary);
+  border-radius: 100px;
+  font-size: 0;
+  overflow: hidden;
+}
+
+.yoya-progress__inner {
+  position: relative;
+  background-color: var(--yoya-primary);
+  border-radius: 100px;
+  transition: width 0.3s ease;
+}
+
+.yoya-progress--normal .yoya-progress__inner {
+  background-color: var(--yoya-primary);
+}
+
+.yoya-progress--active .yoya-progress__inner {
+  background-color: var(--yoya-primary);
+  position: relative;
+}
+
+.yoya-progress--active .yoya-progress__inner::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+  animation: progress-active 2s infinite;
+  border-radius: 100px;
+}
+
+@keyframes progress-active {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.yoya-progress--exception .yoya-progress__inner {
+  background-color: var(--yoya-error);
+}
+
+.yoya-progress--success .yoya-progress__inner {
+  background-color: var(--yoya-success);
+}
+
+.yoya-progress__text {
+  display: inline-block;
+  margin-left: 8px;
+  font-size: 14px;
+  color: var(--yoya-text-secondary);
+}
+
+/* Skeleton Component */
+.yoya-skeleton {
+  display: block;
+  padding: 16px;
+  background-color: var(--yoya-bg);
+  width: 100%;
+}
+
+.yoya-skeleton__avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--yoya-bg-tertiary);
+  margin-bottom: 16px;
+}
+
+.yoya-skeleton__title {
+  height: 20px;
+  width: 60%;
+  background-color: var(--yoya-bg-tertiary);
+  margin-bottom: 16px;
+  border-radius: 4px;
+}
+
+.yoya-skeleton__row {
+  height: 16px;
+  background-color: var(--yoya-bg-tertiary);
+  margin-bottom: 8px;
+  border-radius: 4px;
+}
+
+.yoya-skeleton__row:last-child {
+  margin-bottom: 0;
+}
+
+.yoya-skeleton__button {
+  height: 32px;
+  width: 100px;
+  background-color: var(--yoya-bg-tertiary);
+  margin-top: 16px;
+  border-radius: 4px;
+}
+
+.yoya-skeleton--active .yoya-skeleton__avatar,
+.yoya-skeleton--active .yoya-skeleton__title,
+.yoya-skeleton--active .yoya-skeleton__row,
+.yoya-skeleton--active .yoya-skeleton__button {
+  background: linear-gradient(90deg, var(--yoya-bg-tertiary) 25%, var(--yoya-bg-hover) 50%, var(--yoya-bg-tertiary) 75%);
+  background-size: 200% 100%;
+  animation: skeleton-loading 1.5s infinite;
+}
+
+@keyframes skeleton-loading {
+  0% { background-position: 100% 50%; }
+  100% { background-position: 0 50%; }
+}
+
+/* Tag Component */
+.yoya-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 4px;
+  border: 1px solid var(--yoya-border);
+  background-color: var(--yoya-bg-tertiary);
+  color: var(--yoya-text-secondary);
+}
+
+.yoya-tag__close {
+  margin-left: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+  color: var(--yoya-text-tertiary);
+}
+
+.yoya-tag__close:hover {
+  color: var(--yoya-text-secondary);
+}
+
+.yoya-tag--default {
+  background-color: var(--yoya-bg-tertiary);
+  color: var(--yoya-text-secondary);
+  border-color: var(--yoya-border);
+}
+
+.yoya-tag--blue {
+  background-color: var(--yoya-info-bg);
+  color: var(--yoya-info);
+  border-color: var(--yoya-info);
+}
+
+.yoya-tag--green {
+  background-color: var(--yoya-success-bg);
+  color: var(--yoya-success);
+  border-color: var(--yoya-success);
+}
+
+.yoya-tag--red {
+  background-color: var(--yoya-error-bg);
+  color: var(--yoya-error);
+  border-color: var(--yoya-error);
+}
+
+.yoya-tag--orange {
+  background-color: var(--yoya-warning-bg);
+  color: var(--yoya-warning);
+  border-color: var(--yoya-warning);
+}
+
+.yoya-tag--purple {
+  background-color: rgba(114, 46, 209, 0.1);
+  color: #a882eb;
+  border-color: #a882eb;
+}
+
+.yoya-tag--large {
+  padding: 4px 12px;
+  font-size: 14px;
+}
+
+.yoya-tag--small {
+  padding: 1px 6px;
+  font-size: 10px;
+}
+
+.yoya-tag--bordered {
+  border: 1px solid var(--yoya-border);
+}
+
+.yoya-tag--bordered:not(.yoya-tag--default) {
+  border-color: currentColor;
+}
+
+/* Alert Component */
+.yoya-alert {
+  padding: 8px 16px;
+  border-radius: 4px;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.yoya-alert__icon {
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+.yoya-alert__content {
+  flex: 1;
+  min-width: 0;
+}
+
+.yoya-alert__message {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.yoya-alert__description {
+  font-size: 13px;
+  margin-top: 4px;
+  color: var(--yoya-text-secondary);
+}
+
+.yoya-alert__close {
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1;
+  color: var(--yoya-text-tertiary);
+  flex-shrink: 0;
+}
+
+.yoya-alert__close:hover {
+  color: var(--yoya-text-secondary);
+}
+
+.yoya-alert--info {
+  background-color: var(--yoya-info-bg);
+  border: 1px solid var(--yoya-info);
+}
+
+.yoya-alert--info .yoya-alert__icon {
+  color: var(--yoya-info);
+}
+
+.yoya-alert--success {
+  background-color: var(--yoya-success-bg);
+  border: 1px solid var(--yoya-success);
+}
+
+.yoya-alert--success .yoya-alert__icon {
+  color: var(--yoya-success);
+}
+
+.yoya-alert--warning {
+  background-color: var(--yoya-warning-bg);
+  border: 1px solid var(--yoya-warning);
+}
+
+.yoya-alert--warning .yoya-alert__icon {
+  color: var(--yoya-warning);
+}
+
+.yoya-alert--error {
+  background-color: var(--yoya-error-bg);
+  border: 1px solid var(--yoya-error);
+}
+
+.yoya-alert--error .yoya-alert__icon {
+  color: var(--yoya-error);
+}
+
+/* Breadcrumb Component */
+.yoya-breadcrumb {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: var(--yoya-text-secondary);
+}
+
+.yoya-breadcrumb__items {
+  display: inline-flex;
+  align-items: center;
+}
+
+.yoya-breadcrumb__item {
+  display: inline-flex;
+  align-items: center;
+  color: var(--yoya-primary);
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.yoya-breadcrumb__item:hover {
+  color: var(--yoya-primary-light);
+}
+
+.yoya-breadcrumb__item:last-child {
+  color: var(--yoya-text-primary);
+  cursor: default;
+}
+
+.yoya-breadcrumb__separator {
+  padding: 0 8px;
+  color: var(--yoya-text-tertiary);
+}
+
+/* Statistic Component */
+.yoya-statistic {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.yoya-statistic__title {
+  font-size: 14px;
+  color: var(--yoya-text-secondary);
+  margin-bottom: 8px;
+}
+
+.yoya-statistic__value {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  line-height: 1.5;
+}
+
+.yoya-statistic__value .yoya-statistic__number {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--yoya-text-primary);
+}
+
+.yoya-statistic__prefix {
+  flex-shrink: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.yoya-statistic__suffix {
+  margin-left: 4px;
+  font-size: 14px;
+  color: var(--yoya-text-secondary);
+}
+
+/* Interaction Component Styles */
+
+/* ============================================
+   Tooltip 组件
+   ============================================ */
+.yoya-tooltip {
+  display: inline-block;
+  position: relative;
+}
+
+.yoya-tooltip__content {
+  position: absolute;
+  padding: 6px 12px;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  border-radius: 4px;
+  font-size: 13px;
+  white-space: nowrap;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  pointer-events: none;
+}
+
+/* ============================================
+   Popover 组件
+   ============================================ */
+.yoya-popover {
+  display: inline-block;
+  position: relative;
+}
+
+.yoya-popover__content {
+  position: absolute;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background-color: var(--yoya-bg);
+  border-radius: var(--yoya-border-radius);
+  overflow: hidden;
+}
+
+.yoya-popover__header {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--yoya-border);
+  background-color: var(--yoya-bg-secondary);
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--yoya-text-primary);
+}
+
+.yoya-popover__body {
+  padding: 16px;
+  font-size: 14px;
+  color: var(--yoya-text-secondary);
+}
+
+/* ============================================
+   Dropdown 组件
+   ============================================ */
+.yoya-dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.yoya-dropdown__content {
+  position: absolute;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  min-width: 150px;
+  max-height: 300px;
+  overflow: auto;
+}
+
+.yoya-dropdown__search {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid var(--yoya-border);
+  border-radius: 4px 4px 0 0;
+  outline: none;
+  font-size: 14px;
+}
+
+.yoya-dropdown__search:focus {
+  border-color: var(--yoya-primary);
+  box-shadow: 0 0 0 2px rgba(var(--yoya-primary-rgb), 0.1);
+}
+
+/* ============================================
+   Collapse 组件
+   ============================================ */
+.yoya-collapse {
+  display: block;
+  width: 100%;
+}
+
+.yoya-collapse__panel {
+  border: 1px solid var(--yoya-border);
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: var(--yoya-bg);
+}
+
+.yoya-collapse__panel:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.yoya-collapse__header {
+  padding: 12px 16px;
+  background-color: var(--yoya-bg-secondary);
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--yoya-text-primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.2s;
+}
+
+.yoya-collapse__header:hover {
+  background-color: var(--yoya-bg-tertiary);
+}
+
+.yoya-collapse__header span {
+  font-size: 12px;
+  transition: transform 0.3s;
+}
+
+.yoya-collapse__content {
+  padding: 16px;
+  background-color: var(--yoya-bg);
+  color: var(--yoya-text-secondary);
+  font-size: 14px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* ============================================
+   Tree 组件
+   ============================================ */
+.yoya-tree {
+  display: block;
+  font-size: 14px;
+  color: var(--yoya-text-secondary);
+}
+
+.yoya-tree__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.yoya-tree__node {
+  display: flex;
+  align-items: center;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  user-select: none;
+}
+
+.yoya-tree__node:hover {
+  background-color: var(--yoya-bg-hover);
+}
+
+.yoya-tree__node--selected {
+  background-color: var(--yoya-bg-primary);
+  color: var(--yoya-primary);
+}
+
+.yoya-tree__node--disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.yoya-tree__expand-icon {
+  font-size: 10px;
+  margin-right: 8px;
+  transition: transform 0.2s;
+  width: 16px;
+  height: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.yoya-tree__expand-icon--expanded {
+  transform: rotate(90deg);
+}
+
+.yoya-tree__checkbox {
+  margin-right: 8px;
+}
+
+.yoya-tree__label {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.yoya-tree__children {
+  margin-left: 20px;
+}
+
+/* Tree 节点缩进 */
+.yoya-tree__node[data-level="0"] {
+  padding-left: 12px;
+}
+
+.yoya-tree__node[data-level="1"] {
+  padding-left: 32px;
+}
+
+.yoya-tree__node[data-level="2"] {
+  padding-left: 52px;
+}
+
+.yoya-tree__node[data-level="3"] {
+  padding-left: 72px;
+}
+
+/* ============================================
+   TreeSelect 组件
+   ============================================ */
+.yoya-tree-select {
+  display: inline-block;
+  position: relative;
+}
+
+.yoya-tree-select__trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 200px;
+  padding: 8px 12px;
+  border: 1px solid var(--yoya-border);
+  border-radius: 4px;
+  background-color: var(--yoya-bg);
+  cursor: pointer;
+  font-size: 14px;
+  color: var(--yoya-text-primary);
+  transition: all 0.2s;
+}
+
+.yoya-tree-select__trigger:hover {
+  border-color: var(--yoya-border-hover);
+}
+
+.yoya-tree-select__trigger:focus,
+.yoya-tree-select__trigger--active {
+  border-color: var(--yoya-primary);
+  box-shadow: 0 0 0 2px rgba(var(--yoya-primary-rgb), 0.1);
+}
+
+.yoya-tree-select__placeholder {
+  color: var(--yoya-text-placeholder);
+}
+
+.yoya-tree-select__arrow {
+  font-size: 10px;
+  margin-left: 8px;
+  transition: transform 0.2s;
+}
+
+.yoya-tree-select__arrow--open {
+  transform: rotate(180deg);
+}
+
+.yoya-tree-select__dropdown {
+  position: absolute;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  min-width: 250px;
+  max-height: 300px;
+  overflow: auto;
+  border: 1px solid var(--yoya-border);
+}
+
+/* ============================================
+   动画效果
+   ============================================ */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.yoya-tooltip__content,
+.yoya-popover__content,
+.yoya-dropdown__content,
+.yoya-tree-select__dropdown {
+  animation: fadeIn 0.2s ease-out;
+}
+
+/* ============================================
+   暗色主题适配
+   ============================================ */
+[data-theme="dark"] .yoya-dropdown__content,
+[data-theme="dark"] .yoya-popover__content,
+[data-theme="dark"] .yoya-tree-select__dropdown {
+  background-color: var(--yoya-bg-secondary);
+  border-color: var(--yoya-border);
+}
+
+[data-theme="dark"] .yoya-dropdown__search {
+  background-color: var(--yoya-bg);
+  color: var(--yoya-text-primary);
+  border-color: var(--yoya-border);
+}
+
+[data-theme="dark"] .yoya-dropdown__search:focus {
+  border-color: var(--yoya-primary);
+}
+
+/*# sourceMappingURL=yoya.theme.css.map */
