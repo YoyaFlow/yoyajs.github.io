@@ -10,8 +10,8 @@
  * });
  */
 
-import { vstack, div } from '../../yoya.esm.min.js';
-import { vMenuItem } from '../../yoya.esm.min.js';
+import { vstack, div } from '../yoya.esm.min.js';
+import { vMenuItem } from '../yoya.esm.min.js';
 
 /**
  * 目录项组件
