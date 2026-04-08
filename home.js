@@ -8,12 +8,13 @@
  * - 每个页面有自己的 TOC（固定在内容区右上角）
  */
 
-import { vRouter, vRouterViews, div, flex, container } from '../yoya.esm.min.js';
+import * as echarts from 'https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js';
+import { vRouter, vRouterViews, div, flex, container } from './yoya.esm.min.js';
 import { demoRoutes } from './config/routes.v2.js';
 import { AppShell, updateToc, setScrollContainer } from './framework/AppShell.js';
 
 // 引入 ECharts 并暴露到全局，供 VEchart 组件使用
-import * as echarts from 'https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js';
+
 window.echarts = echarts;
 
 // 初始化主题系统（从 localStorage 恢复主题偏好）
